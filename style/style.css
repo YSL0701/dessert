@@ -334,9 +334,68 @@ template {
   display: none;
 }
 
-.content {
+body {
+  font-family: Microsoft JhengHei;
+}
+
+.container {
   width: 1024px;
-  height: 3242px;
+  height: 3424px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3f5d45;
+}
+
+.main .image {
+  background-image: url(https://images.unsplash.com/photo-1531212906032-c2e417eaa51a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=39118dd28510dc23df690187fd34fc65);
+  background-size: cover;
+  background-position: center center;
+  width: 940px;
+  height: 496px;
   margin-left: auto;
   margin-right: auto;
 }
