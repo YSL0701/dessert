@@ -336,6 +336,8 @@ template {
 
 body {
   font-family: Microsoft JhengHei;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -391,12 +393,71 @@ header a {
 }
 
 .main .image {
-  background-image: url(https://images.unsplash.com/photo-1531212906032-c2e417eaa51a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=39118dd28510dc23df690187fd34fc65);
+  background-image: url(https://images.unsplash.com/photo-1531212906032-c2e417eaa51a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=063233911745a677919b1b45d6df69aa&auto=format&fit=crop&w=1488&q=80);
   background-size: cover;
   background-position: center center;
   width: 940px;
   height: 496px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.main .product-menu {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -89px;
+}
+
+.main .edge {
+  overflow: hidden;
+  margin-left: 2px;
+}
+
+.main .today-featured,
+.main .most-popular,
+.main .new-product {
+  width: 259.67px;
+  height: 256px;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.main .today-featured {
+  background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=1370&q=80);
+}
+
+.main .today-featured .transparent {
+  background-color: rgba(255, 225, 128, 0.8);
+}
+
+.main .most-popular {
+  background-image: url(https://images.unsplash.com/photo-1529300905173-bacc7a4f6425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=828edef4b8ded11b2af636775c90f235&auto=format&fit=crop&w=1534&q=80);
+}
+
+.main .most-popular .transparent {
+  background-color: rgba(141, 162, 145, 0.8);
+}
+
+.main .new-product {
+  background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=1370&q=80);
+}
+
+.main .new-product .transparent {
+  background-color: rgba(141, 162, 145, 0.8);
+}
+
+.main .transparent {
+  height: 256px;
 }
 /*# sourceMappingURL=style.css.map */
