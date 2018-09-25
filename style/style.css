@@ -432,8 +432,10 @@ header a {
   height: 256px;
   background-size: cover;
   background-position: center center;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main .today-featured {
@@ -441,7 +443,8 @@ header a {
 }
 
 .main .today-featured .transparent {
-  background-color: rgba(255, 225, 128, 0.8);
+  background-color: #ffe180;
+  opacity: 0.8;
 }
 
 .main .most-popular {
@@ -449,7 +452,8 @@ header a {
 }
 
 .main .most-popular .transparent {
-  background-color: rgba(141, 162, 145, 0.8);
+  background-color: #3f5d45;
+  opacity: 0.8;
 }
 
 .main .new-product {
@@ -457,7 +461,8 @@ header a {
 }
 
 .main .new-product .transparent {
-  background-color: rgba(141, 162, 145, 0.8);
+  background-color: #3f5d45;
+  opacity: 0.8;
 }
 
 .main .transparent {
@@ -466,6 +471,23 @@ header a {
 
 .main a {
   text-decoration: none;
+  position: relative;
+}
+
+.main .text {
+  position: absolute;
+  bottom: 80px;
+  left: 118px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main .font-primary {
+  color: #3f5d45;
+}
+
+.main .font-white {
+  color: #ffffff;
 }
 
 .main .why-make {
@@ -537,6 +559,12 @@ header a {
   font-size: 16px;
   color: #8da291;
   line-height: 40px;
+}
+
+.main .why-make .punctuation {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
 }
 
 .main .why-eat {
@@ -611,10 +639,42 @@ header a {
   line-height: 40px;
 }
 
+.main .why-eat .punctuation {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+}
+
 .main .no-reason {
+  width: 90px;
+  height: 328px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3f5d45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 95px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.main .no-reason-h1-1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 0;
+}
+
+.main .no-reason-h1-2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 0;
+}

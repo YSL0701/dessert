@@ -16,24 +16,28 @@
   height: 256px;
   background-size: cover;
   background-position: center center;
-  filter: blur(1px);
+  filter: blur(5px);
+  transform: scale(1.1);
 }
 .today-featured {
   background-image: url(https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ed228f25bdefd2291c242f6d390fca&auto=format&fit=crop&w=1534&q=80);
   .transparent {
-    background-color: rgba(255, 225, 128, 0.8);
+    background-color: #ffe180;
+    opacity: 0.8;
   }
 }
 .most-popular {
   background-image: url(https://images.unsplash.com/photo-1504114133367-631ecd3db3ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b75e93d90cd88467ae5715becb431a26&auto=format&fit=crop&w=1572&q=80);
   .transparent {
-    background-color: rgba(141, 162, 145, 0.8);
+    background-color: $primary;
+    opacity: 0.8;
   }
 }
 .new-product {
   background-image: url(https://images.unsplash.com/photo-1499638472904-ea5c6178a300?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c27da96f7150c96a92ba8a53c8644761&auto=format&fit=crop&w=1400&q=80);
   .transparent {
-    background-color: rgba(141, 162, 145, 0.8);
+    background-color: $primary;
+    opacity: 0.8;
   }
 }
 .transparent {
@@ -41,4 +45,18 @@
 }
 a {
   text-decoration: none;
+  position: relative;
+}
+.text {
+  position: absolute;
+  bottom: 80px;
+  left: 118px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.font-primary {
+  color: $primary;
+}
+.font-white {
+  color: #ffffff;
 }
