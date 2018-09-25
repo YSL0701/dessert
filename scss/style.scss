@@ -1,15 +1,5 @@
 @import './reset';
 @import './variables';
-@import './header';
-@import './main';
-
-body {
-  font-family: Microsoft JhengHei;
-  box-sizing: border-box;
-}
-.container {
-  width: $page-width;
-  height: $page-height;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import './body/body';
+@import './header/header';
+@import './main/main';

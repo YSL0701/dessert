@@ -1,0 +1,10 @@
+body {
+  // font-family: Microsoft JhengHei;
+  box-sizing: border-box;
+}
+.container {
+  width: $page-width;
+  height: $page-height;
+  margin-left: auto;
+  margin-right: auto;
+}

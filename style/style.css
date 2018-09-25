@@ -334,6 +334,18 @@ template {
   display: none;
 }
 
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1024px;
+  height: 3424px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header {
   height: 100px;
   display: -webkit-box;
@@ -583,7 +595,7 @@ header a {
 }
 
 .main .why-eat .reason-h1-2 {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 .main .why-eat .article {
@@ -599,16 +611,10 @@ header a {
   line-height: 40px;
 }
 
-body {
-  font-family: Microsoft JhengHei;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  width: 1024px;
-  height: 3424px;
-  margin-left: auto;
-  margin-right: auto;
+.main .no-reason {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #3f5d45;
 }
 /*# sourceMappingURL=style.css.map */

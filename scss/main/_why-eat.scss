@@ -1,0 +1,47 @@
+.why-eat {
+  height: 420px;
+  margin-top: 105px;
+  padding-right: $page-gap;
+  background-color: $secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .reason-img {
+    width: $reason-img-wh;
+    height: $reason-img-wh;
+    background-image: url(https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=1539&q=80);
+    background-size: cover;
+    background-position: center center;
+    align-self: center;
+  }
+  .reason {
+    writing-mode: vertical-rl;
+    color: $primary;
+  }
+  .title {
+    width: 90px;
+    margin-right: $page-gap;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .reason-h1-1 {
+    margin-top: -20px;
+  }
+  .reason-h1-2 {
+    // margin-right: $page-gap;
+    margin-top: -10px;
+  }
+  .article {
+    width: 256px;
+    height: 280px;
+    margin-top: 70px;
+    margin-left: 54px;
+  }
+  p {
+    font-size: 16px;
+    color: $article-color;
+    line-height: 40px;
+  }
+}

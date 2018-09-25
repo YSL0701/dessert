@@ -1,0 +1,46 @@
+.why-make {
+  height: 420px;
+  margin-top: 80px;
+  padding-left: $page-gap;
+  background-color: $secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .reason-img {
+    width: $reason-img-wh;
+    height: $reason-img-wh;
+    background-image: url(https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=1534&q=80);
+    background-size: cover;
+    background-position: center center;
+    align-self: center;
+  }
+  .reason {
+    writing-mode: vertical-rl;
+    color: $primary;
+  }
+  .title {
+    width: 90px;
+    margin-right: $page-gap;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .reason-h1-1 {
+    margin-top: -20px;
+  }
+  .reason-h1-2 {
+    // margin-right: $page-gap;
+    margin-top: -5px;
+  }
+  .article {
+    width: 256px;
+    height: 280px;
+    margin-top: 70px;
+  }
+  p {
+    font-size: 16px;
+    color: $article-color;
+    line-height: 40px;
+  }
+}
