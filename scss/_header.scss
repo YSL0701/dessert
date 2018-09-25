@@ -1,0 +1,29 @@
+header {
+  height: $header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $page-gap;
+  padding-right: $page-gap;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 35%;
+  }
+  li {
+    display: inline-block;
+    margin-left: 60px;
+  }
+  .cart {
+    margin-left: 79px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary;
+  }
+}
