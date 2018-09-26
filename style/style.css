@@ -391,7 +391,7 @@ header .cart {
 header a {
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   color: #3f5d45;
 }
 
@@ -423,6 +423,7 @@ header a {
 .main .edge {
   overflow: hidden;
   margin-left: 2px;
+  position: relative;
 }
 
 .main .today-featured,
@@ -473,22 +474,22 @@ header a {
 
 .main a {
   text-decoration: none;
-  position: relative;
 }
 
 .main .text {
   position: absolute;
+  width: 25px;
   bottom: 80px;
   left: 118px;
   font-size: 24px;
   font-weight: bold;
 }
 
-.main .font-primary {
+.main .text-primary {
   color: #3f5d45;
 }
 
-.main .font-white {
+.main .text-white {
   color: #ffffff;
 }
 
