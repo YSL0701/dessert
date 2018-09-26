@@ -347,7 +347,7 @@ body {
   margin-right: auto;
 }
 
-div {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -531,10 +531,10 @@ header a {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3f5d45;
+  margin-right: 42px;
 }
 
 .main-content .why-make .title {
-  margin-right: 42px;
   margin-left: 80px;
   margin-top: -20px;
 }
@@ -560,9 +560,6 @@ header a {
   color: #8da291;
   line-height: 40px;
   margin-right: -12px;
-}
-
-.main-content .why-make .p2 {
   margin-left: -12px;
 }
 
@@ -609,7 +606,6 @@ header a {
 }
 
 .main-content .why-eat .title {
-  margin-right: 42px;
   margin-left: 80px;
   margin-top: -20px;
 }
@@ -635,9 +631,6 @@ header a {
   color: #8da291;
   line-height: 40px;
   margin-right: -12px;
-}
-
-.main-content .why-eat .p2 {
   margin-left: -12px;
 }
 
