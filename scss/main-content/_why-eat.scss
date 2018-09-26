@@ -17,32 +17,29 @@
   .reason {
     writing-mode: vertical-rl;
     color: $primary;
+    margin-left: 55.5px;
   }
   .title {
-    width: 90px;
     margin-right: $page-gap;
     margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .reason-h1-1 {
     margin-top: -20px;
-  }
-  .reason-h1-2 {
-    // margin-right: $page-gap;
-    margin-top: -10px;
   }
   .article {
     width: 256px;
     height: 280px;
     margin-top: 70px;
-    margin-left: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   p {
     font-size: 16px;
     color: $article-color;
     line-height: 40px;
+    margin-right: $p-line-height-remove;
+  }
+  .p2 {
+    margin-left: $p-line-height-remove;
   }
   .punctuation {
     writing-mode: horizontal-tb;

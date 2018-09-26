@@ -534,9 +534,15 @@ header a {
 }
 
 .main-content .why-make .title {
-  width: 90px;
   margin-right: 42px;
   margin-left: 80px;
+  margin-top: -20px;
+}
+
+.main-content .why-make .article {
+  width: 256px;
+  height: 280px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,24 +555,15 @@ header a {
           justify-content: space-between;
 }
 
-.main-content .why-make .reason-h1-1 {
-  margin-top: -20px;
-}
-
-.main-content .why-make .reason-h1-2 {
-  margin-top: -5px;
-}
-
-.main-content .why-make .article {
-  width: 256px;
-  height: 280px;
-  margin-top: 70px;
-}
-
 .main-content .why-make p {
   font-size: 16px;
   color: #8da291;
   line-height: 40px;
+  margin-right: -12px;
+}
+
+.main-content .why-make .p2 {
+  margin-left: -12px;
 }
 
 .main-content .why-make .punctuation {
@@ -608,12 +605,19 @@ header a {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3f5d45;
+  margin-left: 55.5px;
 }
 
 .main-content .why-eat .title {
-  width: 90px;
   margin-right: 42px;
   margin-left: 80px;
+  margin-top: -20px;
+}
+
+.main-content .why-eat .article {
+  width: 256px;
+  height: 280px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,25 +630,15 @@ header a {
           justify-content: space-between;
 }
 
-.main-content .why-eat .reason-h1-1 {
-  margin-top: -20px;
-}
-
-.main-content .why-eat .reason-h1-2 {
-  margin-top: -10px;
-}
-
-.main-content .why-eat .article {
-  width: 256px;
-  height: 280px;
-  margin-top: 70px;
-  margin-left: 54px;
-}
-
 .main-content .why-eat p {
   font-size: 16px;
   color: #8da291;
   line-height: 40px;
+  margin-right: -12px;
+}
+
+.main-content .why-eat .p2 {
+  margin-left: -12px;
 }
 
 .main-content .why-eat .punctuation {
@@ -654,43 +648,8 @@ header a {
 }
 
 .main-content .no-reason {
-  width: 90px;
-  height: 328px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  color: #3f5d45;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 95px;
-}
-
-.main-content .no-reason-h1-1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-top: 0;
-}
-
-.main-content .no-reason-h1-2 {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-bottom: 0;
-}
-
-.main-content .punctuation {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  margin-left: 483px;
 }
 
 .main-content .product-preview {
