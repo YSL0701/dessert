@@ -346,6 +346,11 @@ body {
   margin-right: auto;
 }
 
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   height: 100px;
   display: -webkit-box;
@@ -395,7 +400,7 @@ header a {
   color: #3f5d45;
 }
 
-.main .image {
+.main-content .image {
   background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=1525&q=80);
   background-size: cover;
   background-position: center center;
@@ -405,8 +410,7 @@ header a {
   margin-right: auto;
 }
 
-.main .product-menu {
-  width: 1024px;
+.main-content .product-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,15 +424,15 @@ header a {
   margin-top: -89px;
 }
 
-.main .edge {
+.main-content .edge {
   overflow: hidden;
   margin-left: 2px;
   position: relative;
 }
 
-.main .today-featured,
-.main .most-popular,
-.main .new-product {
+.main-content .today-featured,
+.main-content .most-popular,
+.main-content .new-product {
   width: 259.67px;
   height: 256px;
   background-size: cover;
@@ -439,44 +443,44 @@ header a {
           transform: scale(1.1);
 }
 
-.main .today-featured {
+.main-content .today-featured {
   background-image: url(https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ed228f25bdefd2291c242f6d390fca&auto=format&fit=crop&w=1534&q=80);
 }
 
-.main .today-featured .transparent {
+.main-content .today-featured .transparent {
   background-color: #ffe180;
   opacity: 0.8;
 }
 
-.main .most-popular {
+.main-content .most-popular {
   background-image: url(https://images.unsplash.com/photo-1504114133367-631ecd3db3ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b75e93d90cd88467ae5715becb431a26&auto=format&fit=crop&w=1572&q=80);
 }
 
-.main .most-popular .transparent {
+.main-content .most-popular .transparent {
   background-color: #3f5d45;
   opacity: 0.8;
 }
 
-.main .new-product {
+.main-content .new-product {
   background-image: url(https://images.unsplash.com/photo-1499638472904-ea5c6178a300?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c27da96f7150c96a92ba8a53c8644761&auto=format&fit=crop&w=1400&q=80);
   -webkit-transform: scale(1.1) rotate(180deg);
           transform: scale(1.1) rotate(180deg);
 }
 
-.main .new-product .transparent {
+.main-content .new-product .transparent {
   background-color: #3f5d45;
   opacity: 0.8;
 }
 
-.main .transparent {
+.main-content .transparent {
   height: 256px;
 }
 
-.main a {
+.main-content a {
   text-decoration: none;
 }
 
-.main .text {
+.main-content .text {
   position: absolute;
   width: 25px;
   bottom: 80px;
@@ -485,15 +489,15 @@ header a {
   font-weight: bold;
 }
 
-.main .text-primary {
+.main-content .text-primary {
   color: #3f5d45;
 }
 
-.main .text-white {
+.main-content .text-white {
   color: #ffffff;
 }
 
-.main .why-make {
+.main-content .why-make {
   height: 420px;
   margin-top: 80px;
   padding-left: 42px;
@@ -510,7 +514,7 @@ header a {
           justify-content: space-between;
 }
 
-.main .why-make .reason-img {
+.main-content .why-make .reason-img {
   width: 460px;
   height: 460px;
   background-image: url(https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=1534&q=80);
@@ -521,14 +525,14 @@ header a {
       align-self: center;
 }
 
-.main .why-make .reason {
+.main-content .why-make .reason {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3f5d45;
 }
 
-.main .why-make .title {
+.main-content .why-make .title {
   width: 90px;
   margin-right: 42px;
   margin-left: 80px;
@@ -544,33 +548,33 @@ header a {
           justify-content: space-between;
 }
 
-.main .why-make .reason-h1-1 {
+.main-content .why-make .reason-h1-1 {
   margin-top: -20px;
 }
 
-.main .why-make .reason-h1-2 {
+.main-content .why-make .reason-h1-2 {
   margin-top: -5px;
 }
 
-.main .why-make .article {
+.main-content .why-make .article {
   width: 256px;
   height: 280px;
   margin-top: 70px;
 }
 
-.main .why-make p {
+.main-content .why-make p {
   font-size: 16px;
   color: #8da291;
   line-height: 40px;
 }
 
-.main .why-make .punctuation {
+.main-content .why-make .punctuation {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
 }
 
-.main .why-eat {
+.main-content .why-eat {
   height: 420px;
   margin-top: 105px;
   padding-right: 42px;
@@ -587,7 +591,7 @@ header a {
           justify-content: space-between;
 }
 
-.main .why-eat .reason-img {
+.main-content .why-eat .reason-img {
   width: 460px;
   height: 460px;
   background-image: url(https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=1539&q=80);
@@ -598,14 +602,14 @@ header a {
       align-self: center;
 }
 
-.main .why-eat .reason {
+.main-content .why-eat .reason {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3f5d45;
 }
 
-.main .why-eat .title {
+.main-content .why-eat .title {
   width: 90px;
   margin-right: 42px;
   margin-left: 80px;
@@ -621,34 +625,34 @@ header a {
           justify-content: space-between;
 }
 
-.main .why-eat .reason-h1-1 {
+.main-content .why-eat .reason-h1-1 {
   margin-top: -20px;
 }
 
-.main .why-eat .reason-h1-2 {
+.main-content .why-eat .reason-h1-2 {
   margin-top: -10px;
 }
 
-.main .why-eat .article {
+.main-content .why-eat .article {
   width: 256px;
   height: 280px;
   margin-top: 70px;
   margin-left: 54px;
 }
 
-.main .why-eat p {
+.main-content .why-eat p {
   font-size: 16px;
   color: #8da291;
   line-height: 40px;
 }
 
-.main .why-eat .punctuation {
+.main-content .why-eat .punctuation {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
 }
 
-.main .no-reason {
+.main-content .no-reason {
   width: 90px;
   height: 328px;
   -webkit-writing-mode: vertical-rl;
@@ -670,13 +674,13 @@ header a {
   margin-top: 95px;
 }
 
-.main .no-reason-h1-1 {
+.main-content .no-reason-h1-1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 0;
 }
 
-.main .no-reason-h1-2 {
+.main-content .no-reason-h1-2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 0;
