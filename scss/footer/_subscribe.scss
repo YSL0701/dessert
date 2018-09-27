@@ -1,7 +1,6 @@
 .subscribe {
   height: 116px;
   background-color: $primary;
-  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,7 +21,7 @@
 .input-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-center;
   align-items: center;
   margin-right: 122px;
   input {

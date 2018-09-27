@@ -342,7 +342,7 @@ body {
 
 .container {
   width: 1024px;
-  height: 3424px;
+  height: 3242px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -773,10 +773,13 @@ header a {
   margin-top: 13px;
 }
 
+footer {
+  margin-top: 60px;
+}
+
 footer .subscribe {
   height: 116px;
   background-color: #3f5d45;
-  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,9 +826,9 @@ footer .input-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-center;
+      -ms-flex-pack: space-center;
+          justify-content: space-center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -861,4 +864,66 @@ footer .input-item .submit {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .sweet-info {
+  height: 341px;
+  padding-top: 38.9px;
+  padding-left: 122px;
+  padding-right: 122px;
+  background-color: #eaf0ed;
+  color: #3f5d45;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer .sweetaste-image {
+  height: 26.6px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .good-day {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: -8.9px;
+}
+
+footer .info {
+  width: 230px;
+  height: 68px;
+  margin-top: 115.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .icon {
+  margin-top: 30px;
+}
+
+footer .icon a {
+  text-decoration: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }

@@ -1,0 +1,39 @@
+.sweet-info {
+  height: 341px;
+  padding-top: 38.9px;
+  padding-left: 122px;
+  padding-right: 122px;
+  background-color: $secondary;
+  color: $primary;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sweetaste-image {
+  height: 26.6px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.good-day {
+  align-self: flex-start;
+  margin-top: -8.9px;
+}
+.info {
+  width: 230px;
+  height: 68px;
+  margin-top: 115.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon {
+  margin-top: 30px;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+}
