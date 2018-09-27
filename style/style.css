@@ -383,6 +383,9 @@ header ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header li {
@@ -715,9 +718,11 @@ header a {
   margin-top: 20px;
   margin-right: 20px;
   font-size: 20px;
+  color: #3f5d45;
 }
 
 .main-content .product-info {
+  height: 28px;
   color: #3f5d45;
   font-size: 20px;
   margin-top: 13px;
@@ -731,6 +736,9 @@ header a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-content .product-name {
@@ -763,4 +771,94 @@ header a {
 .main-content .product-card > a {
   display: inline-block;
   margin-top: 13px;
+}
+
+footer .subscribe {
+  height: 116px;
+  background-color: #3f5d45;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .subscribe-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 122px;
+}
+
+footer .subscribe-text .text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+footer .input-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 122px;
+}
+
+footer .input-item input {
+  width: 316px;
+  height: 56px;
+  border-width: 0;
+  background-color: #eaf0ed;
+}
+
+footer .input-item a {
+  text-decoration: none;
+}
+
+footer .input-item .submit {
+  width: 64px;
+  height: 56px;
+  color: #3f5d45;
+  background-color: #ffe180;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
