@@ -483,9 +483,10 @@ header a {
 
 .main-content .text {
   position: absolute;
-  width: 25px;
-  bottom: 80px;
-  left: 118px;
+  width: 24px;
+  bottom: 70px;
+  left: 117.835px;
+  line-height: 30px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -501,7 +502,6 @@ header a {
 .main-content .why-make {
   height: 420px;
   margin-top: 80px;
-  padding-left: 42px;
   background-color: #eaf0ed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,6 +524,7 @@ header a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-left: 42px;
 }
 
 .main-content .why-make .reason {
@@ -563,16 +564,9 @@ header a {
   margin-left: -12px;
 }
 
-.main-content .why-make .punctuation {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
-}
-
 .main-content .why-eat {
   height: 420px;
   margin-top: 105px;
-  padding-right: 42px;
   background-color: #eaf0ed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +589,7 @@ header a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-right: 42px;
 }
 
 .main-content .why-eat .reason {
@@ -634,15 +629,10 @@ header a {
   margin-left: -12px;
 }
 
-.main-content .why-eat .punctuation {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
-}
-
 .main-content .no-reason {
   margin-top: 95px;
   margin-left: 483px;
+  height: 328px;
 }
 
 .main-content .product-preview {
@@ -654,8 +644,12 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 42px;
+  padding-right: 42px;
+  margin-top: 80px;
 }
 
 .main-content .product-image {
@@ -663,6 +657,19 @@ header a {
   height: 315px;
   background-size: cover;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .main-content .card-image-1 {
@@ -675,4 +682,85 @@ header a {
 
 .main-content .card-image-3 {
   background-image: url(https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=1534&q=80);
+}
+
+.main-content .product-tag {
+  width: 36px;
+  height: 106.73px;
+  margin-left: 20px;
+  background-color: #3f5d45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .tag-text {
+  width: 16px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+.main-content .heart {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.main-content .product-info {
+  color: #3f5d45;
+  font-size: 20px;
+  margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .product-name {
+  margin-left: 33px;
+}
+
+.main-content .price {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.main-content .add-to-cart {
+  width: 300px;
+  height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .product-card > a {
+  display: inline-block;
+  margin-top: 13px;
 }

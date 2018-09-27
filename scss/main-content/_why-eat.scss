@@ -1,7 +1,6 @@
 .why-eat {
   height: 420px;
   margin-top: 105px;
-  padding-right: $page-gap;
   background-color: $secondary;
   display: flex;
   flex-direction: row;
@@ -13,6 +12,7 @@
     background-size: cover;
     background-position: center center;
     align-self: center;
+    margin-right: $page-gap;
   }
   .reason {
     writing-mode: vertical-rl;
@@ -37,8 +37,5 @@
     line-height: 40px;
     margin-right: $p-line-height-remove;
     margin-left: $p-line-height-remove;
-  }
-  .punctuation {
-    writing-mode: horizontal-tb;
   }
 }
