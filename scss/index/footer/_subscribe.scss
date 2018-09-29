@@ -9,7 +9,7 @@
 .subscribe-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-center;
+  justify-content: center;
   align-items: center;
   margin-left: 122px;
   .text {
@@ -21,14 +21,27 @@
 .input-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-center;
+  justify-content: center;
   align-items: center;
   margin-right: 122px;
+  .icon-mail {
+    width: 64px;
+    height: $input-height;
+    color: $primary;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   input {
-    width: 316px;
+    width: 252px;
     height: $input-height;
     border-width: 0;
     background-color: $secondary;
+    outline: none;
+    color: $primary;
+    font-weight: bold;
   }
   a {
     text-decoration: none;

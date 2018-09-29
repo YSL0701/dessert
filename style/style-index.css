@@ -803,9 +803,9 @@ footer .subscribe-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-center;
-      -ms-flex-pack: space-center;
-          justify-content: space-center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -826,20 +826,43 @@ footer .input-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-center;
-      -ms-flex-pack: space-center;
-          justify-content: space-center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 122px;
 }
 
+footer .input-item .icon-mail {
+  width: 64px;
+  height: 56px;
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .input-item input {
-  width: 316px;
+  width: 252px;
   height: 56px;
   border-width: 0;
   background-color: #eaf0ed;
+  outline: none;
+  color: #3f5d45;
+  font-weight: bold;
 }
 
 footer .input-item a {
@@ -916,8 +939,19 @@ footer .info {
           justify-content: space-between;
 }
 
-footer .icon {
+footer .footer-bottom {
   margin-top: 30px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .icon a {
@@ -925,4 +959,12 @@ footer .icon a {
   display: inline-block;
   width: 32px;
   height: 32px;
+}
+
+footer .copyright {
+  height: 16px;
+  font-family: Times;
+  font-weight: normal;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
