@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   header {
     height: $mobile-header-height;
     padding-left: 0;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   header {
     .ham-menu {
       display: none;
