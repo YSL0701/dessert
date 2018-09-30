@@ -1,6 +1,4 @@
 @import '../reset';
 @import './variables';
-@import './body/body';
-@import './header/header';
-@import './main-content/main-content';
-@import './footer/footer';
+@import './desktop/index-desktop';
+@import './mobile/index-mobile';

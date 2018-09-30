@@ -1,0 +1,17 @@
+@media (max-width: 375px) {
+  .main-content {
+    .image {
+      width: 100%;
+      height: 277px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.main-content {
+  @import './product-menu';
+  // @import './why-make';
+  // @import './why-eat';
+  // @import './no-reason';
+  // @import './product-preview';
+}

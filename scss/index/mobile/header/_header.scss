@@ -1,0 +1,44 @@
+@media (max-width: 375px) {
+  header {
+    height: $mobile-header-height;
+    padding-left: 0;
+    padding-right: 0;
+    .ham-menu {
+      width: 18px;
+      height: 12px;
+      margin-left: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .menu-line {
+        height: 2px;
+        background-color: $primary;
+      }
+    }
+    .desktop-logo {
+      display: none;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      display: none;
+    }
+    .cart {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  header {
+    .ham-menu {
+      display: none;
+    }
+    .mobile-logo {
+      display: none;
+    }
+  }
+}
