@@ -5,11 +5,11 @@
   }
   .edge {
     margin-left: 0;
+    width: 33%;
   }
   .today-featured,
   .most-popular,
   .new-product {
-    width: 124px;
     height: 180px;
     background-size: cover;
     background-position: center center;
@@ -22,7 +22,8 @@
   .text {
     width: 20px;
     bottom: 40px;
-    left: 52px;
+    left: 50%;
+    margin-left: -10px;
     line-height: 24px;
     font-size: 20px;
     font-weight: bold;
