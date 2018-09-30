@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .product-preview {
+    margin-top: 30px;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    .card-2,
+    .card-3 {
+      display: none;
+    }
+    .product-image {
+      width: 315px;
+    }
+    .product-name {
+      width: 183px;
+      padding-left: 37px;
+    }
+    .price {
+      width: 132px;
+      padding-right: 24.4px;
+    }
+    .add-to-cart {
+      width: 315px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+}

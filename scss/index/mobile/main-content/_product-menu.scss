@@ -10,6 +10,7 @@
   .today-featured,
   .most-popular,
   .new-product {
+    width: 100%;
     height: 180px;
     background-size: cover;
     background-position: center center;
@@ -18,6 +19,9 @@
   }
   .new-product {
     transform: scale(1.1) rotate(180deg);
+  }
+  .transparent {
+    height: 180px;
   }
   .text {
     width: 20px;

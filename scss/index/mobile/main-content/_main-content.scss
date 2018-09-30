@@ -10,8 +10,8 @@
 }
 .main-content {
   @import './product-menu';
-  // @import './why-make';
-  // @import './why-eat';
-  // @import './no-reason';
-  // @import './product-preview';
+  @import './why-make';
+  @import './why-eat';
+  @import './no-reason';
+  @import './product-preview';
 }

@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  footer {
+    margin-top: 30px;
+  }
+}
+footer {
+  @import './subscribe';
+  @import './sweet-info';
+}
