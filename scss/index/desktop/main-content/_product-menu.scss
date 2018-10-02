@@ -22,6 +22,8 @@
 }
 .today-featured {
   background-image: url(https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ed228f25bdefd2291c242f6d390fca&auto=format&fit=crop&w=1534&q=80);
+  transition-property: transform;
+  transition-duration: 0.5s;
   .transparent {
     background-color: #ffe180;
     opacity: 0.8;
@@ -29,6 +31,8 @@
 }
 .most-popular {
   background-image: url(https://images.unsplash.com/photo-1504114133367-631ecd3db3ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b75e93d90cd88467ae5715becb431a26&auto=format&fit=crop&w=1572&q=80);
+  transition-property: transform;
+  transition-duration: 0.5s;
   .transparent {
     background-color: $primary;
     opacity: 0.8;
@@ -37,6 +41,8 @@
 .new-product {
   background-image: url(https://images.unsplash.com/photo-1499638472904-ea5c6178a300?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c27da96f7150c96a92ba8a53c8644761&auto=format&fit=crop&w=1400&q=80);
   transform: scale(1.1) rotate(180deg);
+  transition-property: transform;
+  transition-duration: 0.5s;
   .transparent {
     background-color: $primary;
     opacity: 0.8;
@@ -47,6 +53,13 @@
 }
 a {
   text-decoration: none;
+  &:hover .today-featured,
+  &:hover .most-popular {
+    transform: scale(1.5) rotate(10deg);
+  }
+  &:hover .new-product {
+    transform: scale(1.5) rotate(190deg);
+  }
 }
 .text {
   position: absolute;

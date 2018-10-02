@@ -95,6 +95,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  &:hover {
+    color: $secondary;
+    background-color: $primary;
+  }
 }
 .product-card > a {
   display: inline-block;
