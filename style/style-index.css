@@ -354,6 +354,10 @@ body {
 
 header {
   height: 100px;
+  position: fixed;
+  z-index: 10;
+  width: 1024px;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
