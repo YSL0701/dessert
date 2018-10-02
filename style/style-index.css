@@ -991,11 +991,16 @@ footer .footer-bottom {
           justify-content: space-between;
 }
 
+footer .icon {
+  font-size: 0;
+}
+
 footer .icon a {
   text-decoration: none;
   display: inline-block;
   width: 32px;
   height: 32px;
+  margin-right: 8px;
 }
 
 footer .copyright {
@@ -1357,5 +1362,48 @@ footer .copyright {
   }
   footer .input-item input {
     width: 187px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .sweet-info {
+    height: 311px;
+    padding-top: 38.9px;
+    padding-left: 30px;
+    padding-right: 0;
+    background-color: #eaf0ed;
+    color: #3f5d45;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  footer .good-day {
+    display: none;
+  }
+  footer .info {
+    width: 230px;
+    height: 68px;
+    margin-top: 39.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-bottom {
+    margin-top: 37px;
+    height: 71px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .copyright {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
