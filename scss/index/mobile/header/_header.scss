@@ -1,8 +1,10 @@
 @media (max-width: 767px) {
   header {
-    height: $mobile-header-height;
-    padding-left: 0;
-    padding-right: 0;
+    .header-container {
+      height: $mobile-header-height;
+      padding-left: 0;
+      padding-right: 0;
+    }
     .ham-menu {
       width: 18px;
       height: 12px;
