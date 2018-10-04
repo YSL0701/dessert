@@ -108,3 +108,15 @@
 .product-card > a {
   display: inline-block;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-preview {
+    justify-content: center;
+  }
+  .product-card {
+    margin-left: 30px;
+  }
+  .card-3 {
+    display: none;
+  }
+}

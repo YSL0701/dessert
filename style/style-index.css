@@ -626,6 +626,29 @@ header a:hover {
   margin-left: -12px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .why-make {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-content .why-make .reason-img {
+    width: 40%;
+    height: auto;
+    padding-bottom: 40%;
+  }
+  .main-content .why-make .title {
+    margin-left: 40px;
+  }
+  .main-content .why-make .article {
+    width: 60%;
+  }
+  .main-content .why-make p {
+    line-height: 35px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .main-content .why-eat {
   height: 420px;
   margin-top: 105px;
@@ -691,10 +714,45 @@ header a:hover {
   margin-left: -12px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .why-eat {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-content .why-eat .reason-img {
+    width: 40%;
+    height: auto;
+    padding-bottom: 40%;
+  }
+  .main-content .why-eat .title {
+    margin-left: 40px;
+  }
+  .main-content .why-eat .article {
+    width: 60%;
+  }
+  .main-content .why-eat p {
+    line-height: 35px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .main-content .no-reason {
   margin-top: 95px;
   margin-left: 483px;
   height: 328px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .no-reason {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-content .product-preview {
@@ -882,6 +940,26 @@ header a:hover {
   display: inline-block;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .product-preview {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-content .product-card {
+    margin-left: 30px;
+  }
+  .main-content .card-3 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .image {
+    width: 100%;
+  }
+}
+
 footer {
   margin-top: 60px;
   width: 100%;
@@ -1007,6 +1085,29 @@ footer .input-item .submit {
 
 footer .input-item .submit:active {
   outline: 2px solid #ffc91a;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .subscribe-container {
+    height: 186px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .subscribe-text {
+    margin-left: 0;
+  }
+  footer .input-item {
+    margin-top: 20px;
+    margin-right: 0;
+  }
 }
 
 footer .sweet-info {

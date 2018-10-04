@@ -65,3 +65,19 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .subscribe-container {
+    height: 186px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-text {
+    margin-left: 0;
+  }
+  .input-item {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+}

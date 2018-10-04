@@ -3,3 +3,11 @@
   margin-left: 483px;
   height: 328px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .no-reason {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
