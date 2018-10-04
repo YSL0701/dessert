@@ -1,12 +1,16 @@
 .sweet-info {
-  height: 341px;
-  padding-top: 38.9px;
-  padding-left: 122px;
-  padding-right: 122px;
   background-color: $secondary;
   color: $primary;
   font-size: 16px;
   font-weight: bold;
+}
+.info-container {
+  height: 341px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 38.9px;
+  padding-left: 122px;
+  padding-right: 122px;
 }
 .sweetaste-image {
   height: 27px;

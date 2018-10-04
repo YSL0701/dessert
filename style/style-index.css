@@ -341,11 +341,20 @@ body {
 }
 
 .container {
-  width: 1024px;
-  height: 3242px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
@@ -354,13 +363,18 @@ body {
 }
 
 header {
-  height: 100px;
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-  max-width: 1024px;
   background: #ffffff;
+}
+
+header .header-container {
+  width: 100%;
+  max-width: 1024px;
+  height: 100px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +427,11 @@ header a {
 
 header a:hover {
   color: #547b5c;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1024px;
 }
 
 .main-content .image {
@@ -865,11 +884,18 @@ header a:hover {
 
 footer {
   margin-top: 60px;
+  width: 100%;
 }
 
 footer .subscribe {
-  height: 116px;
   background-color: #3f5d45;
+}
+
+footer .subscribe-container {
+  height: 116px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -984,14 +1010,19 @@ footer .input-item .submit:active {
 }
 
 footer .sweet-info {
-  height: 341px;
-  padding-top: 38.9px;
-  padding-left: 122px;
-  padding-right: 122px;
   background-color: #eaf0ed;
   color: #3f5d45;
   font-size: 16px;
   font-weight: bold;
+}
+
+footer .info-container {
+  height: 341px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 38.9px;
+  padding-left: 122px;
+  padding-right: 122px;
 }
 
 footer .sweetaste-image {
