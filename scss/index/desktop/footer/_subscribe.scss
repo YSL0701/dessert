@@ -55,5 +55,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    &:active {
+      outline: 2px solid darken(#ffe180, 20%);
+    }
   }
 }

@@ -411,6 +411,10 @@ header a {
   color: #3f5d45;
 }
 
+header a:hover {
+  color: #547b5c;
+}
+
 .main-content .image {
   background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=1525&q=80);
   background-size: cover;
@@ -842,13 +846,17 @@ header a {
           align-items: center;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .main-content .add-to-cart:hover {
   color: #eaf0ed;
   background-color: #3f5d45;
+}
+
+.main-content .add-to-cart:active {
+  outline: 3px solid #ffc91a;
 }
 
 .main-content .product-card > a {
@@ -969,6 +977,10 @@ footer .input-item .submit {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .input-item .submit:active {
+  outline: 2px solid #ffc91a;
 }
 
 footer .sweet-info {
