@@ -975,6 +975,10 @@ header a:hover {
   .main-content .card-3 {
     display: none;
   }
+  .main-content .add-to-cart:hover {
+    color: #3f5d45;
+    background-color: #eaf0ed;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1557,6 +1561,10 @@ footer .copyright {
   }
   .main-content .product-preview .add-to-cart {
     width: 315px;
+  }
+  .main-content .product-preview .add-to-cart:hover {
+    color: #3f5d45;
+    background-color: #eaf0ed;
   }
 }
 

@@ -119,4 +119,10 @@
   .card-3 {
     display: none;
   }
+  .add-to-cart {
+    &:hover {
+      color: $primary;
+      background-color: $secondary;
+    }
+  }
 }

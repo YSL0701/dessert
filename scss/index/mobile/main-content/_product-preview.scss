@@ -21,6 +21,10 @@
     }
     .add-to-cart {
       width: 315px;
+      &:hover {
+        color: $primary;
+        background-color: $secondary;
+      }
     }
   }
 }
