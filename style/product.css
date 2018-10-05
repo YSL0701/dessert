@@ -507,6 +507,76 @@ header a:hover {
   margin-top: 40px;
 }
 
+.main .product-list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .product-list > .category {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.main .product-list > .category > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main .product-list > .category > ul > li:first-child div {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.main .product-list > .category > ul > li a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main .product-list > .category > ul > li div {
+  width: 300px;
+  height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .product-list > .category > ul > li div:not(.cat-title) {
+  color: #3f5d45;
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+}
+
+.main .product-list > .category > ul > li .active {
+  background-color: #eaf0ed;
+}
+
 .main .product-list > .product {
   width: 620px;
   display: -webkit-box;
@@ -516,11 +586,18 @@ header a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .product-list > .product > div {
+  margin-bottom: 20px;
 }
 
 .main .product-list > .product > div > .product-image {
@@ -683,6 +760,10 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -702,4 +783,90 @@ header a:hover {
 
 .main .product-list > .product > div > a > div:active {
   outline: 3px solid #ffc91a;
+}
+
+.main .pagination {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .pagination > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .pagination > ul > li {
+  display: inline-block;
+}
+
+.main .pagination > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main .pagination > ul > li > a > div {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  color: #3f5d45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .pagination > ul > li > a .prev {
+  border: 1px solid #eaf0ed;
+}
+
+.main .pagination > ul > li > a .page,
+.main .pagination > ul > li > a .next {
+  border-top: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+}
+
+.main .pagination > ul > li > a .active {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.main .pagination > ul > li > a .disabled {
+  pointer-events: none;
 }

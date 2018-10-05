@@ -18,31 +18,63 @@
     }
   }
   .product-list {
+    margin-top: 60px;
+    @include flex(row, space-between);
+    > .category {
+      position: sticky;
+      top: 100px;
+      > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        > li:first-child {
+          div {
+            background-color: $primary;
+            color: $secondary;
+          }
+        }
+        > li {
+          a {
+            text-decoration: none;
+            display: inline-block;
+          }
+          div {
+            width: $category-width;
+            height: $category-height;
+            font-size: 24px;
+            font-weight: bold;
+            @include flex(row, center, center);
+          }
+          div:not(.cat-title) {
+            color: $primary;
+            border-left: 1px solid $secondary;
+            border-right: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+          }
+          .active {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
     > .product {
       width: 620px;
-      display: flex;
-      flex-direction: row;
+      @include flex(row, space-between);
       flex-wrap: wrap;
-      justify-content: space-between;
       > div {
+        margin-bottom: 20px;
         > .product-image {
           width: $product-image-width;
           height: $product-image-height;
           background-size: cover;
           background-position: center center;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: flex-start;
+          @include flex(row, space-between);
           > .product-tag {
             width: $tag-width;
             height: $tag-height;
             margin-left: 20px;
             background-color: $primary;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, center, center);
             > div {
               width: 16px;
               font-size: 16px;
@@ -81,17 +113,11 @@
           height: 54px;
           color: $primary;
           font-size: 20px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
+          @include flex(row, space-between, center);
           > .product-name {
             width: 173px;
             height: 54px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
+            @include flex(row, flex-start, center);
             padding-left: 32px;
             border-left-width: 1px;
             border-left-style: solid;
@@ -104,10 +130,7 @@
             width: 127px;
             height: 54px;
             font-weight: bold;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
+            @include flex(row, flex-end, center);
             padding-right: 19px;
             border-right-width: 1px;
             border-right-style: solid;
@@ -124,9 +147,7 @@
             font-weight: bold;
             color: $primary;
             background-color: $secondary;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, center, center);
             transition-property: color, background-color;
             transition-duration: 0.3s;
             &:hover {
@@ -136,6 +157,47 @@
             &:active {
               outline: 3px solid darken(#ffe180, 20%);
             }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-top: 10px;
+    @include flex(row, flex-end);
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+      @include flex();
+      > li {
+        display: inline-block;
+        > a {
+          text-decoration: none;
+          display: inline-block;
+          > div {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            color: $primary;
+            @include flex(row, center, center);
+          }
+          .prev {
+            border: 1px solid $secondary;
+          }
+          .page,
+          .next {
+            border-top: 1px solid $secondary;
+            border-right: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+          }
+          .active {
+            background-color: $primary;
+            color: $secondary;
+          }
+          .disabled {
+            pointer-events: none;
           }
         }
       }
