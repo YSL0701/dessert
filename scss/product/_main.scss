@@ -1,0 +1,144 @@
+.main {
+  .main-image-area {
+    background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    background-position: center center;
+    width: $main-image-width;
+    height: $main-image-height;
+    > div {
+      margin-left: auto;
+      margin-right: 40px;
+      width: 90px;
+      > img {
+        vertical-align: bottom;
+        width: 90px;
+        height: 328px;
+        margin-top: 40px;
+      }
+    }
+  }
+  .product-list {
+    > .product {
+      width: 620px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > div {
+        > .product-image {
+          width: $product-image-width;
+          height: $product-image-height;
+          background-size: cover;
+          background-position: center center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          > .product-tag {
+            width: $tag-width;
+            height: $tag-height;
+            margin-left: 20px;
+            background-color: $primary;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            > div {
+              width: 16px;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 20px;
+            }
+          }
+          > .heart {
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+            color: $primary;
+          }
+          &.product {
+            &-1 {
+              background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=800&q=60);
+            }
+            &-2 {
+              background-image: url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60);
+            }
+            &-3 {
+              background-image: url(https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60);
+            }
+            &-4 {
+              background-image: url(https://images.unsplash.com/photo-1474045326708-cdc78c2487cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b25bcab557acc2d93446512e117f1be&auto=format&fit=crop&w=800&q=60);
+            }
+            &-5 {
+              background-image: url(https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60);
+            }
+            &-6 {
+              background-image: url(https://images.unsplash.com/photo-1499635842761-4f1f28fafcff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3d6d0e5a1d7e9cd7a3cc81626125a8ed&auto=format&fit=crop&w=800&q=60);
+            }
+          }
+        }
+        .product-info {
+          height: 54px;
+          color: $primary;
+          font-size: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          > .product-name {
+            width: 173px;
+            height: 54px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 32px;
+            border-left-width: 1px;
+            border-left-style: solid;
+            border-left-color: $secondary;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: $secondary;
+          }
+          > .price {
+            width: 127px;
+            height: 54px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 19px;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: $secondary;
+          }
+        }
+        > a {
+          display: inline-block;
+          text-decoration: none;
+          > div {
+            width: $product-image-width;
+            height: 65px;
+            font-size: 24px;
+            font-weight: bold;
+            color: $primary;
+            background-color: $secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: color, background-color;
+            transition-duration: 0.3s;
+            &:hover {
+              color: $secondary;
+              background-color: $primary;
+            }
+            &:active {
+              outline: 3px solid darken(#ffe180, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
