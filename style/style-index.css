@@ -392,6 +392,11 @@ header .header-container {
   padding-right: 42px;
 }
 
+header .desktop-logo {
+  width: 220px;
+  height: 40px;
+}
+
 header ul {
   list-style: none;
   display: -webkit-box;
@@ -602,6 +607,11 @@ header a:hover {
   margin-top: -20px;
 }
 
+.main-content .why-make .desktop-why-make {
+  width: 89px;
+  height: 308px;
+}
+
 .main-content .why-make .article {
   width: 256px;
   height: 280px;
@@ -690,6 +700,11 @@ header a:hover {
   margin-top: -20px;
 }
 
+.main-content .why-eat .desktop-why-eat {
+  width: 89px;
+  height: 304px;
+}
+
 .main-content .why-eat .article {
   width: 256px;
   height: 280px;
@@ -719,6 +734,9 @@ header a:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .main-content .why-eat .reason {
+    margin-right: 20px;
+  }
   .main-content .why-eat .reason-img {
     width: 40%;
     height: auto;
@@ -740,6 +758,11 @@ header a:hover {
 .main-content .no-reason {
   margin-top: 95px;
   margin-left: 483px;
+  height: 328px;
+}
+
+.main-content .desktop-no-reason {
+  width: 90px;
   height: 328px;
 }
 
@@ -1012,6 +1035,10 @@ footer .subscribe-text .text {
   margin-left: 20px;
 }
 
+footer .logo {
+  width: 40px;
+}
+
 footer .input-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1143,7 +1170,14 @@ footer .sweetaste-image {
           align-items: center;
 }
 
+footer .sweetaste {
+  width: 172px;
+  height: 27px;
+}
+
 footer .good-day {
+  width: 60px;
+  height: 219px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: -8.9px;
@@ -1234,6 +1268,10 @@ footer .copyright {
   header .desktop-logo {
     display: none;
   }
+  header .mobile-logo {
+    width: 115px;
+    height: 18px;
+  }
   header ul {
     padding: 0;
   }
@@ -1320,6 +1358,10 @@ footer .copyright {
     display: none;
   }
   .main-content .why-make .mobile-why-make {
+    width: 190px;
+    height: 59px;
+  }
+  .main-content .why-make .mobile-why-make {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1392,6 +1434,8 @@ footer .copyright {
     display: none;
   }
   .main-content .why-eat .mobile-why-eat {
+    width: 190px;
+    height: 59px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1474,6 +1518,10 @@ footer .copyright {
   }
   .main-content .no-reason .desktop-no-reason {
     display: none;
+  }
+  .main-content .no-reason .mobile-no-reason {
+    width: 209px;
+    height: 59px;
   }
 }
 

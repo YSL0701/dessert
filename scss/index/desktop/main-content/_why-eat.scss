@@ -23,6 +23,10 @@
     margin-left: 80px;
     margin-top: -20px;
   }
+  .desktop-why-eat {
+    width: 89px;
+    height: 304px;
+  }
   .article {
     width: 256px;
     height: 280px;
@@ -43,6 +47,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .why-eat {
     justify-content: space-around;
+    .reason {
+      margin-right: 20px;
+    }
     .reason-img {
       width: 40%;
       height: auto;
