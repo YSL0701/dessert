@@ -1,10 +1,16 @@
 .main {
+  @include media($tablet) {
+    width: 100%;
+  }
   .main-image-area {
     background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=800&q=60);
     background-size: cover;
     background-position: center center;
     width: $main-image-width;
     height: $main-image-height;
+    @include media($tablet) {
+      width: 100%;
+    }
     > div {
       margin-left: auto;
       margin-right: 40px;
@@ -20,9 +26,18 @@
   .product-list {
     margin-top: 60px;
     @include flex(row, space-between);
+    @include media($tablet) {
+      @include flex(row, center);
+      flex-flow: wrap;
+    }
     > .category {
       position: sticky;
       top: 100px;
+      @include media($tablet) {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+      }
       > ul {
         margin: 0;
         padding: 0;
@@ -37,6 +52,9 @@
           a {
             text-decoration: none;
             display: inline-block;
+            @include media($tablet) {
+              width: 100%;
+            }
           }
           div {
             width: $category-width;
@@ -44,6 +62,9 @@
             font-size: 24px;
             font-weight: bold;
             @include flex(row, center, center);
+            @include media($tablet) {
+              width: 100%;
+            }
           }
           div:not(.cat-title) {
             color: $primary;
@@ -165,6 +186,9 @@
   .pagination {
     margin-top: 10px;
     @include flex(row, flex-end);
+    @include media($tablet) {
+      @include flex(row, center);
+    }
     > ul {
       margin: 0;
       padding: 0;
