@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  margin-top: 60px;
+  > .subscribe {
+    background-color: $primary;
+    > .subscribe-container {
+      height: 116px;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      @include flex(row, space-between, center);
+      > .subscribe-text {
+        @include flex(row, center, center);
+        margin-left: 122px;
+        > img {
+          width: 40px;
+        }
+        > div {
+          font-size: 24px;
+          color: #ffffff;
+          margin-left: 20px;
+        }
+      }
+      > .input-item {
+        @include flex(row, center, center);
+        margin-right: 122px;
+        > div {
+          width: 64px;
+          height: $input-height;
+          color: $primary;
+          background-color: $secondary;
+          @include flex(row, center, center);
+        }
+        > input {
+          width: 252px;
+          height: $input-height;
+          border-width: 0;
+          background-color: $secondary;
+          outline: none;
+          color: $primary;
+          font-weight: bold;
+        }
+        > a {
+          text-decoration: none;
+          > div {
+            width: 64px;
+            height: $input-height;
+            color: $primary;
+            background-color: #ffe180;
+            @include flex(row, center, center);
+            &:active {
+              outline: 2px solid darken(#ffe180, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+  > .sweet-info {
+    background-color: $secondary;
+    color: $primary;
+    font-size: 16px;
+    font-weight: bold;
+    > .info-container {
+      height: 341px;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding-top: 38.9px;
+      padding-left: 122px;
+      padding-right: 122px;
+      > .sweetaste-image {
+        height: 27px;
+        @include flex(row, space-between, center);
+        > .sweetaste {
+          width: 172px;
+          height: 27px;
+        }
+        > .good-day {
+          width: 60px;
+          height: 219px;
+          align-self: flex-start;
+          margin-top: -8.9px;
+        }
+      }
+      > .info {
+        width: 230px;
+        height: 68px;
+        margin-top: 115px;
+        @include flex(column, space-between);
+      }
+      > .footer-bottom {
+        margin-top: 30px;
+        height: 32px;
+        @include flex(row, space-between);
+        > .icon {
+          font-size: 0;
+          > a {
+            text-decoration: none;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+        }
+        > .copyright {
+          height: 16px;
+          font-family: Times;
+          font-weight: normal;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
