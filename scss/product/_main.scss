@@ -11,15 +11,28 @@
     @include media($tablet) {
       width: 100%;
     }
+    @include media($mobile) {
+      height: 277px;
+      background-position: -58px center;
+    }
     > div {
       margin-left: auto;
       margin-right: 40px;
       width: 90px;
+      @include media($mobile) {
+        width: 60px;
+        margin-right: 30px;
+      }
       > img {
         vertical-align: bottom;
         width: 90px;
         height: 328px;
         margin-top: 40px;
+        @include media($mobile) {
+          width: 60px;
+          height: auto;
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -30,6 +43,9 @@
       @include flex(row, center);
       flex-flow: wrap;
     }
+    @include media($mobile) {
+      margin-top: 0;
+    }
     > .category {
       position: sticky;
       top: 100px;
@@ -37,6 +53,9 @@
         position: static;
         width: 100%;
         margin-bottom: 20px;
+      }
+      @include media($mobile) {
+        margin-bottom: 30px;
       }
       > ul {
         margin: 0;
@@ -82,8 +101,15 @@
       width: 620px;
       @include flex(row, space-between);
       flex-wrap: wrap;
+      @include media($mobile) {
+        width: 100%;
+        @include flex(row, space-around);
+      }
       > div {
         margin-bottom: 20px;
+        @include media($mobile) {
+          margin-bottom: 30px;
+        }
         > .product-image {
           width: $product-image-width;
           height: $product-image-height;
@@ -188,6 +214,9 @@
     @include flex(row, flex-end);
     @include media($tablet) {
       @include flex(row, center);
+    }
+    @include media($mobile) {
+      margin-top: 0;
     }
     > ul {
       margin: 0;

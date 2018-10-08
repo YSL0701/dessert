@@ -1,6 +1,9 @@
 footer {
   width: 100%;
   margin-top: 60px;
+  @include media($mobile) {
+    margin-top: 30px;
+  }
   > .subscribe {
     background-color: $primary;
     > .subscribe-container {
@@ -13,11 +16,17 @@ footer {
         height: 186px;
         @include flex(column, center, center);
       }
+      @include media($mobile) {
+        @include flex(column, space-between, center);
+      }
       > .subscribe-text {
         @include flex(row, center, center);
         margin-left: 122px;
         @include media($tablet) {
           margin-left: 0;
+        }
+        @include media($mobile) {
+          margin-top: 30px;
         }
         > img {
           width: 40px;
@@ -35,6 +44,9 @@ footer {
           margin-top: 20px;
           margin-right: 0;
         }
+        @include media($mobile) {
+          margin-bottom: 30px;
+        }
         > div {
           width: 64px;
           height: $input-height;
@@ -50,6 +62,9 @@ footer {
           outline: none;
           color: $primary;
           font-weight: bold;
+          @include media($mobile) {
+            width: 187px;
+          }
         }
         > a {
           text-decoration: none;
@@ -79,6 +94,16 @@ footer {
       padding-top: 38.9px;
       padding-left: 122px;
       padding-right: 122px;
+      @include media($mobile) {
+        height: 311px;
+        padding-top: 38.9px;
+        padding-left: 30px;
+        padding-right: 0;
+        background-color: $secondary;
+        color: $primary;
+        font-size: 16px;
+        font-weight: bold;
+      }
       > .sweetaste-image {
         height: 27px;
         @include flex(row, space-between, center);
@@ -91,6 +116,9 @@ footer {
           height: 219px;
           align-self: flex-start;
           margin-top: -8.9px;
+          @include media($mobile) {
+            display: none;
+          }
         }
       }
       > .info {
@@ -98,11 +126,21 @@ footer {
         height: 68px;
         margin-top: 115px;
         @include flex(column, space-between);
+        @include media($mobile) {
+          width: 230px;
+          height: 68px;
+          margin-top: 39.5px;
+        }
       }
       > .footer-bottom {
         margin-top: 30px;
         height: 32px;
         @include flex(row, space-between);
+        @include media($mobile) {
+          margin-top: 37px;
+          height: 71px;
+          flex-direction: column;
+        }
         > .icon {
           font-size: 0;
           > a {
@@ -118,6 +156,9 @@ footer {
           font-family: Times;
           font-weight: normal;
           align-self: flex-end;
+          @include media($mobile) {
+            align-self: flex-start;
+          }
         }
       }
     }
