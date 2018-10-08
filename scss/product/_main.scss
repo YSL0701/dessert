@@ -200,6 +200,10 @@
             &:hover {
               color: $secondary;
               background-color: $primary;
+              @include media($tablet) {
+                color: $primary;
+                background-color: $secondary;
+              }
             }
             &:active {
               outline: 3px solid darken(#ffe180, 20%);
