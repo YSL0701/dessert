@@ -33,25 +33,32 @@
         <div class="login-area">
           <div class="title">會員登入</div>
           <div class="mobile-other-account">
-            <img src="./image/ic-facebook-logotype.svg" alt="">
-            <img src="./image/ic-google.svg" alt="">
-            <img src="./image/ic-yahoo.svg" alt="">
+            <a href="javascript:">
+              <div><img src="./image/ic-facebook-logotype.svg" alt="" class="facebook"></div>
+            </a>
+            <a href="javascript:">
+              <div class="google-area"><img src="./image/ic-google.svg" alt="" class="google"></div>
+            </a>
+            <a href="javascript:">
+              <div><img src="./image/ic-yahoo.svg" alt="" class="yahoo"></div>
+            </a>
           </div>
-          <div class="account">
-            <div class="account-icon"><i class="material-icons">assignment_ind</i></div>
-            <input type="text" placeholder="電子信箱/手機號碼">
+          <div class="login-info">
+            <div class="account">
+              <div class="account-icon"><i class="material-icons">assignment_ind</i></div>
+              <input type="text" placeholder="電子信箱/手機號碼">
+            </div>
+            <div class="password">
+              <div class="password-icon"><i class="material-icons">vpn_key</i></div>
+              <input type="password" placeholder="請輸入使用者密碼">
+            </div>
+            <label for="remember" class="remember">
+              <input type="checkbox" id="remember" class="checkbox">
+              <span class="ischeck"><i class="material-icons">check_box</i></span>
+              <span class="uncheck"><i class="material-icons">check_box_outline_blank</i></span>
+              記住我
+            </label>
           </div>
-          <div class="password">
-            <div class="password-icon"><i class="material-icons">vpn_key</i></div>
-            <input type="password" placeholder="請輸入使用者密碼">
-          </div>
-
-          <label for="remember" class="remember">
-            <input type="checkbox" id="remember" class="checkbox">
-            <span class="ischeck"><i class="material-icons">check_box</i></span>
-            <span class="uncheck"><i class="material-icons">check_box_outline_blank</i></span>
-            記住我
-          </label>
           <a href="javascript:">
             <div class="login">登入帳號</div>
           </a>

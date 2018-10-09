@@ -1,90 +1,150 @@
 .main {
   margin-top: 30px;
+  @include media($mobile) {
+    margin-top: 0;
+  }
   @include flex(row, center, center);
+  @include media($tablet) {
+    flex-flow: wrap;
+  }
+  @include media($mobile) {
+    width: 100%;
+  }
   > .login-area {
     background-color: $primary;
     width: 390px;
     height: 380px;
     @include flex(column, flex-start, center);
+    @include media($mobile) {
+      width: 100%;
+      height: 511px;
+    }
     > .title {
       font-size: 36px;
       font-weight: bold;
       color: #ffffff;
       margin-top: 40px;
+      @include media($mobile) {
+        margin-top: 30px;
+      }
     }
     > .mobile-other-account {
       display: none;
-    }
-    > .account {
-      @include flex(row, flex-start, center);
-      margin-top: 40px;
-      > div {
-        width: 64px;
-        height: 56px;
-        color: $primary;
+      @include media($mobile) {
+        display: block;
+        width: 100%;
+        height: 116px;
+        margin-top: 30px;
         background-color: $secondary;
         @include flex(row, center, center);
       }
-      > input {
-        width: 266px;
-        height: 56px;
-        color: $primary;
-        background-color: $secondary;
-        outline: none;
-        border: none;
-        padding: 0;
-      }
-    }
-    > .password {
-      @include flex(row, flex-start, center);
-      margin-top: 16px;
-      > div {
-        width: 64px;
-        height: 56px;
-        color: $primary;
-        background-color: $secondary;
-        @include flex(row, center, center);
-      }
-      > input {
-        width: 266px;
-        height: 56px;
-        background-color: $secondary;
-        outline: none;
-        border: none;
-        padding: 0;
-      }
-    }
-    > .remember {
-      color: #ffffff;
-      cursor: pointer;
-      align-self: flex-start;
-      margin-left: 30px;
-      margin-top: 16px;
-      position: relative;
-      @include flex(row, flex-start, center);
-      > input {
-        opacity: 0;
-        position: absolute;
-        left: 70px;
-        &:checked ~ .ischeck {
-          display: inline-block;
+      > a {
+        display: block;
+        > div {
+          width: 105px;
+          height: 56px;
+          background-color: #ffffff;
+          @include flex(row, center, center);
+          > .facebook {
+            width: 90px;
+          }
+          > .google {
+            width: 70px;
+            margin-top: 5px;
+          }
+          > .yahoo {
+            width: 80px;
+          }
         }
-        &:checked ~ .uncheck {
+        > .google-area {
+          border-left: 1px solid $secondary;
+          border-right: 1px solid $secondary;
+        }
+      }
+    }
+    .login-info {
+      margin-top: 40px;
+      @include media($mobile) {
+        margin-top: 30px;
+      }
+      > .account {
+        @include flex(row, flex-start, center);
+        > div {
+          width: 64px;
+          height: $input-height;
+          color: $primary;
+          background-color: $secondary;
+          @include flex(row, center, center);
+        }
+        > input {
+          width: 266px;
+          height: $input-height;
+          color: $primary;
+          background-color: $secondary;
+          outline: none;
+          border: none;
+          padding: 0;
+          @include media($mobile) {
+            width: 251px;
+          }
+        }
+      }
+      > .password {
+        @include flex(row, flex-start, center);
+        margin-top: 16px;
+        > div {
+          width: 64px;
+          height: $input-height;
+          color: $primary;
+          background-color: $secondary;
+          @include flex(row, center, center);
+        }
+        > input {
+          width: 266px;
+          height: $input-height;
+          background-color: $secondary;
+          outline: none;
+          border: none;
+          padding: 0;
+          @include media($mobile) {
+            width: 251px;
+          }
+        }
+      }
+      > .remember {
+        color: #ffffff;
+        cursor: pointer;
+        align-self: flex-start;
+        margin-top: 16px;
+        position: relative;
+        @include flex(row, flex-start, center);
+        > input {
+          opacity: 0;
+          position: absolute;
+          left: 70px;
+          &:checked ~ .ischeck {
+            display: inline-block;
+          }
+          &:checked ~ .uncheck {
+            display: none;
+          }
+        }
+        > span {
+          width: 24px;
+          height: 24px;
+        }
+        > .ischeck {
           display: none;
         }
-      }
-      > span {
-        width: 24px;
-        height: 24px;
-      }
-      > .ischeck {
-        display: none;
       }
     }
     > a {
       display: block;
       text-decoration: none;
       margin-top: auto;
+      @include media($mobile) {
+        width: 100%;
+      }
       > .login {
         width: 390px;
         height: 65px;
@@ -94,6 +154,9 @@
         font-weight: bold;
         transition: background-color, 0.3s;
         @include flex(row, center, center);
+        @include media($mobile) {
+          width: 100%;
+        }
         &:hover {
           background-color: darken(#ffe180, 10%);
         }
@@ -104,6 +167,9 @@
     width: 390px;
     height: 350px;
     background-color: $secondary;
+    @include media($mobile) {
+      display: none;
+    }
     > .title {
       font-size: 24px;
       color: #8da291;

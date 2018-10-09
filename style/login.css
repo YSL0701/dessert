@@ -527,6 +527,25 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .main {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
+}
+
 .main > .login-area {
   background-color: #3f5d45;
   width: 390px;
@@ -546,6 +565,13 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .main > .login-area {
+    width: 100%;
+    height: 511px;
+  }
+}
+
 .main > .login-area > .title {
   font-size: 36px;
   font-weight: bold;
@@ -553,11 +579,91 @@ header > .header-container > ul > .cart {
   margin-top: 40px;
 }
 
+@media (max-width: 767px) {
+  .main > .login-area > .title {
+    margin-top: 30px;
+  }
+}
+
 .main > .login-area > .mobile-other-account {
   display: none;
 }
 
-.main > .login-area > .account {
+@media (max-width: 767px) {
+  .main > .login-area > .mobile-other-account {
+    display: block;
+    width: 100%;
+    height: 116px;
+    margin-top: 30px;
+    background-color: #eaf0ed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main > .login-area > .mobile-other-account > a {
+  display: block;
+}
+
+.main > .login-area > .mobile-other-account > a > div {
+  width: 105px;
+  height: 56px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .login-area > .mobile-other-account > a > div > .facebook {
+  width: 90px;
+}
+
+.main > .login-area > .mobile-other-account > a > div > .google {
+  width: 70px;
+  margin-top: 5px;
+}
+
+.main > .login-area > .mobile-other-account > a > div > .yahoo {
+  width: 80px;
+}
+
+.main > .login-area > .mobile-other-account > a > .google-area {
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+}
+
+.main > .login-area .login-info {
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .main > .login-area .login-info {
+    margin-top: 30px;
+  }
+}
+
+.main > .login-area .login-info > .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,10 +677,9 @@ header > .header-container > ul > .cart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
 }
 
-.main > .login-area > .account > div {
+.main > .login-area .login-info > .account > div {
   width: 64px;
   height: 56px;
   color: #3f5d45;
@@ -594,7 +699,7 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
-.main > .login-area > .account > input {
+.main > .login-area .login-info > .account > input {
   width: 266px;
   height: 56px;
   color: #3f5d45;
@@ -604,7 +709,13 @@ header > .header-container > ul > .cart {
   padding: 0;
 }
 
-.main > .login-area > .password {
+@media (max-width: 767px) {
+  .main > .login-area .login-info > .account > input {
+    width: 251px;
+  }
+}
+
+.main > .login-area .login-info > .password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,7 +732,7 @@ header > .header-container > ul > .cart {
   margin-top: 16px;
 }
 
-.main > .login-area > .password > div {
+.main > .login-area .login-info > .password > div {
   width: 64px;
   height: 56px;
   color: #3f5d45;
@@ -641,7 +752,7 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
-.main > .login-area > .password > input {
+.main > .login-area .login-info > .password > input {
   width: 266px;
   height: 56px;
   background-color: #eaf0ed;
@@ -650,12 +761,17 @@ header > .header-container > ul > .cart {
   padding: 0;
 }
 
-.main > .login-area > .remember {
+@media (max-width: 767px) {
+  .main > .login-area .login-info > .password > input {
+    width: 251px;
+  }
+}
+
+.main > .login-area .login-info > .remember {
   color: #ffffff;
   cursor: pointer;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 30px;
   margin-top: 16px;
   position: relative;
   display: -webkit-box;
@@ -673,26 +789,26 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
-.main > .login-area > .remember > input {
+.main > .login-area .login-info > .remember > input {
   opacity: 0;
   position: absolute;
   left: 70px;
 }
 
-.main > .login-area > .remember > input:checked ~ .ischeck {
+.main > .login-area .login-info > .remember > input:checked ~ .ischeck {
   display: inline-block;
 }
 
-.main > .login-area > .remember > input:checked ~ .uncheck {
+.main > .login-area .login-info > .remember > input:checked ~ .uncheck {
   display: none;
 }
 
-.main > .login-area > .remember > span {
+.main > .login-area .login-info > .remember > span {
   width: 24px;
   height: 24px;
 }
 
-.main > .login-area > .remember > .ischeck {
+.main > .login-area .login-info > .remember > .ischeck {
   display: none;
 }
 
@@ -700,6 +816,12 @@ header > .header-container > ul > .cart {
   display: block;
   text-decoration: none;
   margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .main > .login-area > a {
+    width: 100%;
+  }
 }
 
 .main > .login-area > a > .login {
@@ -726,6 +848,12 @@ header > .header-container > ul > .cart {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .main > .login-area > a > .login {
+    width: 100%;
+  }
+}
+
 .main > .login-area > a > .login:hover {
   background-color: #ffd54d;
 }
@@ -734,6 +862,12 @@ header > .header-container > ul > .cart {
   width: 390px;
   height: 350px;
   background-color: #eaf0ed;
+}
+
+@media (max-width: 767px) {
+  .main > .other-account {
+    display: none;
+  }
 }
 
 .main > .other-account > .title {
