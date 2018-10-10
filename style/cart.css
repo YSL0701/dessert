@@ -510,6 +510,23 @@ header > .header-container > ul > .cart {
   }
 }
 
+.main {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .main > .cart {
   width: 620px;
   color: #3f5d45;
@@ -520,6 +537,19 @@ header > .header-container > ul > .cart {
   background-color: #eaf0ed;
   font-size: 24px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main > .cart > .content > div {
@@ -560,6 +590,20 @@ header > .header-container > ul > .cart {
 
 .main > .cart > .content > div > .product-info {
   margin-left: 40px;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .main > .cart > .content > div > .product-info > .name {
@@ -632,6 +676,120 @@ header > .header-container > ul > .cart {
   color: #8da291;
   height: 24px;
   width: 24px;
+  cursor: pointer;
+}
+
+.main > .order {
+  width: 300px;
+  height: 258px;
+  margin-left: 20px;
+  background-color: #3f5d45;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .order > .title {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.main > .order > .content {
+  width: 260px;
+  margin-top: 16px;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.main > .order > .content > .subtotal,
+.main > .order > .content .freight {
+  margin-top: 16px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main > .order > .content > .total-price {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main > .order > a {
+  display: block;
+  margin-top: auto;
+  text-decoration: none;
+  width: 100%;
+}
+
+.main > .order > a > div {
+  height: 65px;
+  color: #3f5d45;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffe180;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .order > a > div:hover {
+  background-color: #ffd54d;
+}
+
+.main > .order > a > div:active {
+  outline: 3px solid #ffc91a;
 }
 
 footer {

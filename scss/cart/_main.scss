@@ -1,4 +1,6 @@
 .main {
+  margin-top: 30px;
+  @include flex(row, center);
   > .cart {
     width: 620px;
     color: $primary;
@@ -7,6 +9,7 @@
       background-color: $secondary;
       font-size: 24px;
       font-weight: bold;
+      @include flex(row, center, center);
     }
     > .content {
       > div {
@@ -31,6 +34,8 @@
         }
         > .product-info {
           margin-left: 40px;
+          height: 53px;
+          @include flex(column, space-between);
           > .name {
             font-size: 20px;
           }
@@ -72,6 +77,61 @@
           color: #8da291;
           height: 24px;
           width: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  > .order {
+    width: 300px;
+    height: 258px;
+    margin-left: 20px;
+    background-color: $primary;
+    position: sticky;
+    top: 100px;
+    @include flex(column, flex-start, center);
+    > .title {
+      margin-top: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    > .content {
+      width: 260px;
+      margin-top: 16px;
+      color: #ffffff;
+      border-top: 1px solid #ffffff;
+      > .subtotal,
+      .freight {
+        margin-top: 16px;
+        font-size: 16px;
+        @include flex(row, space-between);
+      }
+      > .total-price {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: bold;
+        @include flex(row, space-between);
+      }
+    }
+    > a {
+      display: block;
+      margin-top: auto;
+      text-decoration: none;
+      width: 100%;
+      > div {
+        height: 65px;
+        color: $primary;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #ffe180;
+        transition: background-color 0.3s;
+        @include flex(row, center, center);
+        &:hover {
+          background-color: darken(#ffe180, 10%);
+        }
+        &:active {
+          outline: 3px solid darken(#ffe180, 20%);
         }
       }
     }
