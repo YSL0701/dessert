@@ -5,6 +5,9 @@
     @include flex(column, flex-start, center);
     width: 100%;
   }
+  @include media($mobile) {
+    margin-top: 0;
+  }
   > .cart {
     width: 620px;
     color: $primary;
@@ -141,13 +144,27 @@
       margin-top: 31.5px;
     }
     @include media($mobile) {
-      width: 315px;
+      width: 100%;
+      max-width: 450px;
+      background-color: #ffffff;
+      margin-left: 0;
+      margin-bottom: -30px;
     }
     > .title {
       margin-top: 16px;
       font-size: 24px;
       font-weight: bold;
       color: #ffffff;
+      @include media($mobile) {
+        width: calc(100% - 60px);
+        height: 65px;
+        color: $primary;
+        background-color: $secondary;
+        margin-top: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+        @include flex(row, center, center);
+      }
     }
     > .content {
       width: 260px;
@@ -156,6 +173,11 @@
       border-top: 1px solid #ffffff;
       @include media($tablet) {
         width: 360px;
+      }
+      @include media($mobile) {
+        width: calc(100% - 60px);
+        margin-top: 0;
+        color: $primary;
       }
       > .subtotal,
       .freight {
@@ -175,6 +197,8 @@
       margin-top: auto;
       text-decoration: none;
       width: 100%;
+      @include media($mobile) {
+      }
       > div {
         height: 65px;
         color: $primary;
