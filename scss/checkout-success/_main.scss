@@ -1,0 +1,219 @@
+.main {
+  margin-top: 30px;
+  @include flex(row, center);
+  @include media($tablet) {
+    @include flex(column, flex-start, center);
+    width: 100%;
+  }
+  @include media($mobile) {
+    margin-top: 0;
+  }
+  > .cart {
+    width: 620px;
+    color: $primary;
+    @include media($mobile) {
+      width: 100%;
+    }
+    > .title {
+      height: 65px;
+      background-color: $secondary;
+      font-size: 24px;
+      font-weight: bold;
+      @include flex(row, center, center);
+    }
+    > .content {
+      > div {
+        margin-top: 33px;
+        @include flex(row, space-between, center);
+        @include media($mobile) {
+          @include flex(row, flex-start);
+          flex-wrap: wrap;
+          position: relative;
+          height: 160px;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+        > .product-image {
+          width: 110px;
+          height: 110px;
+          background-size: cover;
+          background-position: center center;
+          @include media($mobile) {
+            width: 50%;
+            height: 106px;
+          }
+        }
+        > .image {
+          &-1 {
+            background-image: url(https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60);
+          }
+          &-2 {
+            background-image: url(https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60);
+          }
+          &-3 {
+            background-image: url(https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60);
+          }
+        }
+        > .product-info {
+          margin-left: 40px;
+          height: 53px;
+          @include flex(column, space-around);
+          @include media($mobile) {
+            margin-left: 16px;
+            height: 50px;
+          }
+          > .name {
+            font-size: 20px;
+          }
+          > .price {
+            font-size: 16px;
+          }
+        }
+        > .counter {
+          font-size: 16px;
+          margin-left: 40px;
+          @include flex(row, flex-start, center);
+          @include media($mobile) {
+            position: absolute;
+            margin-left: 16px;
+            left: 50%;
+            bottom: 53.5px;
+          }
+          > div {
+            width: 48px;
+            height: 48px;
+            @include flex(row, center, center);
+          }
+          > .minus {
+            border: 1px solid $secondary;
+          }
+          > .count,
+          .add {
+            border: {
+              top: 1px solid $secondary;
+              right: 1px solid $secondary;
+              bottom: 1px solid $secondary;
+            }
+          }
+          > .minus,
+          .add {
+            cursor: pointer;
+          }
+        }
+        > .subtotal {
+          margin-left: 40px;
+          font-weight: bold;
+          font-size: 20px;
+          @include media($mobile) {
+            width: 100%;
+            height: 49px;
+            margin-left: 0;
+            margin-top: 5px;
+            border: {
+              top: 1px solid $secondary;
+              bottom: 1px solid $secondary;
+            }
+            @include flex(row, flex-end, center);
+          }
+        }
+        > .delete {
+          margin-left: 40px;
+          color: #8da291;
+          height: 24px;
+          width: 24px;
+          cursor: pointer;
+          @include media($mobile) {
+            position: absolute;
+            bottom: 12.5px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  > .order {
+    width: 300px;
+    height: 258px;
+    margin-left: 20px;
+    background-color: $primary;
+    position: sticky;
+    top: 100px;
+    @include flex(column, flex-start, center);
+    @include media($tablet) {
+      width: 400px;
+      margin-top: 31.5px;
+    }
+    @include media($mobile) {
+      width: 100%;
+      max-width: 450px;
+      background-color: #ffffff;
+      margin-left: 0;
+      margin-bottom: -30px;
+    }
+    > .title {
+      margin-top: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      @include media($mobile) {
+        width: calc(100% - 60px);
+        height: 65px;
+        color: $primary;
+        background-color: $secondary;
+        margin-top: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+        @include flex(row, center, center);
+      }
+    }
+    > .content {
+      width: 260px;
+      margin-top: 16px;
+      color: #ffffff;
+      border-top: 1px solid #ffffff;
+      @include media($tablet) {
+        width: 360px;
+      }
+      @include media($mobile) {
+        width: calc(100% - 60px);
+        margin-top: 0;
+        color: $primary;
+      }
+      > .subtotal,
+      .freight {
+        margin-top: 16px;
+        font-size: 16px;
+        @include flex(row, space-between);
+      }
+      > .total-price {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: bold;
+        @include flex(row, space-between);
+      }
+    }
+    > a {
+      display: block;
+      margin-top: auto;
+      text-decoration: none;
+      width: 100%;
+      @include media($mobile) {
+      }
+      > div {
+        height: 65px;
+        color: $primary;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #ffe180;
+        transition: background-color 0.3s;
+        @include flex(row, center, center);
+        &:hover {
+          background-color: darken(#ffe180, 10%);
+        }
+        &:active {
+          outline: 3px solid darken(#ffe180, 20%);
+        }
+      }
+    }
+  }
+}
