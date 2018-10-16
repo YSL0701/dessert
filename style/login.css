@@ -573,10 +573,24 @@ header > .header-container > ul > .cart {
 }
 
 .main > .login-area > .title {
+  height: 50px;
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -871,6 +885,7 @@ header > .header-container > ul > .cart {
 }
 
 .main > .other-account > .title {
+  height: 33px;
   font-size: 24px;
   color: #8da291;
   margin-top: 40px;

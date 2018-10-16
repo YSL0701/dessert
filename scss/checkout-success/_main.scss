@@ -8,15 +8,18 @@
     background-size: cover;
     margin-left: $page-gap;
     margin-right: $page-gap;
-    height: 518px;
+    height: 460px;
     @include flex(column, flex-start, center);
     @include media($mobile) {
+      height: 518px;
       margin-left: 0;
       margin-right: 0;
     }
     > .check-area {
+      height: 24px;
       color: $primary;
       margin-top: 128px;
+      line-height: 0;
       @include flex(row, center, center);
       @include media($mobile) {
         margin-top: 210px;

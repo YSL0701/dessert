@@ -522,7 +522,7 @@ header > .header-container > ul > .cart {
   background-size: cover;
   margin-left: 42px;
   margin-right: 42px;
-  height: 518px;
+  height: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,14 +540,17 @@ header > .header-container > ul > .cart {
 
 @media (max-width: 767px) {
   .main > .lg-image {
+    height: 518px;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 .main > .lg-image > .check-area {
+  height: 24px;
   color: #3f5d45;
   margin-top: 128px;
+  line-height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
