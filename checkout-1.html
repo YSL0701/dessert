@@ -31,13 +31,21 @@
       </header>
       <div class="main">
         <div class="shipping">
-          <div class="title">運送</div>
-          <div class="step">
-            <div></div>
-            <span></span>
-            <div></div>
-            <span></span>
-            <div></div>
+          <div class="title">
+            <div class="text">運送</div>
+            <div class="step">
+              <div class="currently">
+                <div class="inner"></div>
+              </div>
+              <span></span>
+              <div>
+                <div class="inner"></div>
+              </div>
+              <span></span>
+              <div>
+                <div class="inner"></div>
+              </div>
+            </div>
           </div>
           <div class="name-area">
             <div class="last-name">
@@ -51,60 +59,97 @@
           </div>
           <div class="tel">
             <div class="text">電話</div>
-            <input type="text">
+            <input type="tel">
           </div>
           <div class="address">
             <div class="text">地址</div>
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div class="input-area">
+              <input type="text" class="city">
+              <input type="text" class="district">
+              <input type="text" class="detail">
+            </div>
           </div>
           <div class="next"></div>
         </div>
-      </div>
-      <footer>
-        <!-- 訂閱區 -->
-        <div class="subscribe">
-          <div class="subscribe-container">
-            <div class="subscribe-text">
-              <img src="./image/logo-light.svg" alt="" class="logo">
-              <div class="text">訂閱你我的甜蜜郵件</div>
+        <div class="order">
+          <div class="summary">
+            <div class="title">訂單摘要</div>
+            <div class="content">
+              <div class="subtotal">
+                <div>小計</div>
+                <div>NT$ 2,700</div>
+              </div>
+              <div class="freight">
+                <div>運費</div>
+                <div>NT$ 300</div>
+              </div>
+              <div class="total-price">
+                <div>總計</div>
+                <div>NT$ 3,000</div>
+              </div>
             </div>
-            <div class="input-item">
-              <div class="icon-mail"><i class="material-icons">mail</i></div>
-              <input type="text">
-              <a href="javascript:">
-                <div class="submit"><i class="material-icons">arrow_forward</i></div>
-              </a>
+          </div>
+          <div class="list">
+            <div class="product-info">
+              <div class="product-image"></div>
+              <div class="name">焦糖馬卡龍（2）</div>
+              <div class="subtotal">NT$ 900</div>
+            </div>
+            <div class="product-info">
+              <div class="product-image"></div>
+              <div class="name">焦糖馬卡龍（2）</div>
+              <div class="subtotal">NT$ 900</div>
+            </div>
+            <div class="product-info">
+              <div class="product-image"></div>
+              <div class="name">焦糖馬卡龍（2）</div>
+              <div class="subtotal">NT$ 900</div>
             </div>
           </div>
         </div>
-        <!-- 連絡資訊區 -->
-        <div class="sweet-info">
-          <div class="info-container">
-            <div class="sweetaste-image">
-              <img src="./image/logotype-lg-dark.svg" alt="" class="sweetaste">
-              <img src="./image/sm-今天是個吃甜點的好日子.svg" alt="" class="good-day">
-            </div>
-            <div class="info">
-              <div class="tel">07-1234-5678</div>
-              <div class="email">sweetaste@email.com</div>
-              <div class="address">800 高雄市新興區幸福路 520 號</div>
-            </div>
-            <div class="footer-bottom">
-              <div class="icon">
-                <a href="javascript:" class="icon-line">
-                  <img src="./image/ic-line@.svg" alt="">
-                </a>
-                <a href="javascript:" class="icon-facebook">
-                  <img src="./image/ic-facebook.svg" alt="">
+        <footer>
+          <!-- 訂閱區 -->
+          <div class="subscribe">
+            <div class="subscribe-container">
+              <div class="subscribe-text">
+                <img src="./image/logo-light.svg" alt="" class="logo">
+                <div class="text">訂閱你我的甜蜜郵件</div>
+              </div>
+              <div class="input-item">
+                <div class="icon-mail"><i class="material-icons">mail</i></div>
+                <input type="text">
+                <a href="javascript:">
+                  <div class="submit"><i class="material-icons">arrow_forward</i></div>
                 </a>
               </div>
-              <div class="copyright">© 2018 Sweetaste* All Rights Reserved</div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+          <!-- 連絡資訊區 -->
+          <div class="sweet-info">
+            <div class="info-container">
+              <div class="sweetaste-image">
+                <img src="./image/logotype-lg-dark.svg" alt="" class="sweetaste">
+                <img src="./image/sm-今天是個吃甜點的好日子.svg" alt="" class="good-day">
+              </div>
+              <div class="info">
+                <div class="tel">07-1234-5678</div>
+                <div class="email">sweetaste@email.com</div>
+                <div class="address">800 高雄市新興區幸福路 520 號</div>
+              </div>
+              <div class="footer-bottom">
+                <div class="icon">
+                  <a href="javascript:" class="icon-line">
+                    <img src="./image/ic-line@.svg" alt="">
+                  </a>
+                  <a href="javascript:" class="icon-facebook">
+                    <img src="./image/ic-facebook.svg" alt="">
+                  </a>
+                </div>
+                <div class="copyright">© 2018 Sweetaste* All Rights Reserved</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
   </body>
 </html>
