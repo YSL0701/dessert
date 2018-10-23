@@ -3,18 +3,19 @@
   @include flex(row, center);
   @include media($tablet) {
     flex-wrap: wrap;
+    margin-top: 0;
   }
   @include media($mobile) {
     width: 100%;
     margin-bottom: -30px;
   }
-  > .shipping {
+  > .checkout-info {
     width: 460px;
     background-color: $primary;
     @include media($mobile) {
       width: 100%;
     }
-    > .shipping-info {
+    > .info {
       padding-left: 40px;
       padding-right: 40px;
       @include flex(column, flex-start, center);
@@ -37,20 +38,29 @@
         }
         > .step {
           @include flex(row, flex-start, center);
-          > div {
+          > .unchecked {
             width: 20px;
             height: 20px;
             background-color: $primary;
             border-radius: 50%;
-            border: 1px solid $secondary;
+            border: 1px solid #8da291;
+          }
+          > .checked {
+            width: 24px;
+            height: 24px;
+            margin-right: -2px;
+            color: $secondary;
           }
           > span {
-            width: 65px;
+            width: 66px;
             height: 1px;
-            background-color: $secondary;
+            background-color: #8da291;
             @include media($mobile) {
               width: 53.47px;
             }
+          }
+          .passed {
+            background-color: $secondary;
           }
           > .currently {
             background-color: $secondary;
@@ -183,6 +193,119 @@
           > .detail {
             width: 100%;
             margin-top: 8px;
+          }
+        }
+      }
+      > .creditCard {
+        width: 100%;
+        margin-top: 30px;
+        > .text {
+          width: 100px;
+          height: 28px;
+          color: $secondary;
+          font-size: 20px;
+          font-weight: bold;
+          @include flex(row, center, center);
+        }
+        > .card-number {
+          width: 100%;
+          margin-top: 8px;
+          @include flex();
+          > input {
+            width: calc(100% - 64px);
+            height: 56px;
+            background-color: $secondary;
+            color: $primary;
+            border: none;
+            padding-left: 20px;
+          }
+          > .card-icon {
+            width: 64px;
+            height: 56px;
+            color: $primary;
+            background-color: $secondary;
+            @include flex(row, center, center);
+          }
+        }
+      }
+      > .cardholder-name {
+        width: 100%;
+        margin-top: 16px;
+        > .text {
+          width: 100px;
+          height: 28px;
+          color: $secondary;
+          font-size: 20px;
+          font-weight: bold;
+          @include flex(row, center, center);
+        }
+        > .input-area {
+          width: 100%;
+          margin-top: 8px;
+          @include flex(row, space-between);
+          > input {
+            width: 186px;
+            height: 56px;
+            background-color: $secondary;
+            color: $primary;
+            border: none;
+            padding-left: 20px;
+            font-size: 16px;
+            @include media($mobile) {
+              width: calc(50% - 4.5px);
+            }
+          }
+        }
+      }
+      > .expiration-date {
+        width: 100%;
+        margin-top: 16px;
+        > .text {
+          width: 80px;
+          height: 28px;
+          color: $secondary;
+          font-size: 20px;
+          font-weight: bold;
+          @include flex(row, center, center);
+        }
+        > .input-area {
+          width: 100%;
+          margin-top: 8px;
+          @include flex(row, space-between);
+          > input {
+            width: 186px;
+            height: 56px;
+            background-color: $secondary;
+            color: $primary;
+            border: none;
+            padding-left: 20px;
+            font-size: 16px;
+            @include media($mobile) {
+              width: calc(50% - 4.5px);
+            }
+          }
+        }
+      }
+      > .security-code {
+        width: 100%;
+        margin-top: 16px;
+        > .text {
+          width: 100px;
+          height: 28px;
+          color: $secondary;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        > input {
+          width: 186px;
+          height: 56px;
+          background-color: $secondary;
+          color: $primary;
+          border: none;
+          padding-left: 20px;
+          font-size: 16px;
+          @include media($mobile) {
+            width: calc(50% - 4.5px);
           }
         }
       }

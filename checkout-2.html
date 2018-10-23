@@ -33,8 +33,12 @@
         <div class="checkout-info">
           <div class="info">
             <div class="title">
-              <div class="text">運送</div>
+              <div class="text">付款</div>
               <div class="step">
+                <div class="checked">
+                  <i class="material-icons">check_circle</i>
+                </div>
+                <span class="passed"></span>
                 <div class="unchecked currently">
                   <div class="inner"></div>
                 </div>
@@ -42,33 +46,32 @@
                 <div class="unchecked">
                   <div class="inner"></div>
                 </div>
-                <span></span>
-                <div class="unchecked">
-                  <div class="inner"></div>
+              </div>
+            </div>
+            <div class="creditCard">
+              <div class="text">信用卡卡號</div>
+              <div class="card-number">
+                <input type="text" placeholder="9012-3456-7890-1234">
+                <div class="card-icon">
+                  <i class="material-icons">credit_card</i>
                 </div>
               </div>
             </div>
-            <div class="name-area">
-              <div class="last-name">
-                <div class="text">姓氏</div>
-                <input type="text" placeholder="王">
-              </div>
-              <div class="name">
-                <div class="text">名字</div>
-                <input type="text" placeholder="小明">
-              </div>
-            </div>
-            <div class="tel">
-              <div class="text">電話</div>
-              <input type="tel" placeholder="0912-345-678">
-            </div>
-            <div class="address">
-              <div class="text">地址</div>
+            <div class="cardholder-name">
+              <div class="text">持卡人姓名</div>
               <div class="input-area">
-                <input type="text" class="city" placeholder="高雄市">
-                <input type="text" class="district" placeholder="新興區">
-                <input type="text" class="detail" placeholder="幸福路 520 號">
-              </div>
+                <input type="text" placeholder="王">
+                <input type="text" placeholder="小明"></div>
+            </div>
+            <div class="expiration-date">
+              <div class="text">有效期限</div>
+              <div class="input-area">
+                <input type="text" placeholder="月">
+                <input type="text" placeholder="年"></div>
+            </div>
+            <div class="security-code">
+              <div class="text">背面末三碼</div>
+              <input type="text" placeholder="123">
             </div>
           </div>
           <div class="next">下一步</div>
