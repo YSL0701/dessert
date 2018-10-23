@@ -146,6 +146,7 @@
           font-size: 20px;
           font-weight: bold;
           color: $secondary;
+          @include flex(row, flex-start, center);
         }
         > input {
           width: 100%;
@@ -165,6 +166,7 @@
           font-size: 20px;
           font-weight: bold;
           color: $secondary;
+          @include flex(row, flex-start, center);
         }
         .input-area {
           margin-top: 8px;
@@ -218,6 +220,7 @@
             color: $primary;
             border: none;
             padding-left: 20px;
+            font-size: 16px;
           }
           > .card-icon {
             width: 64px;
@@ -295,10 +298,12 @@
           color: $secondary;
           font-size: 20px;
           font-weight: bold;
+          @include flex(row, flex-start, center);
         }
         > input {
           width: 186px;
           height: 56px;
+          margin-top: 8px;
           background-color: $secondary;
           color: $primary;
           border: none;
@@ -306,6 +311,68 @@
           font-size: 16px;
           @include media($mobile) {
             width: calc(50% - 4.5px);
+          }
+        }
+      }
+      > .receipt {
+        > .receipt-type {
+          margin-top: 30px;
+          @include flex();
+          > div {
+            width: 190px;
+            height: 56px;
+            background-color: $primary;
+            color: $secondary;
+            font-size: 20px;
+            font-weight: bold;
+            @include flex(row, center, center);
+            border: 1px solid $secondary;
+          }
+          .active {
+            background-color: $secondary;
+            color: $primary;
+          }
+        }
+        > .email {
+          margin-top: 30px;
+          > .text {
+            width: 120px;
+            height: 28px;
+            font-size: 20px;
+            color: $secondary;
+            font-weight: bold;
+            @include flex(row, flex-start, center);
+          }
+          > input {
+            margin-top: 8px;
+            padding-left: 20px;
+            width: 380px;
+            height: 56px;
+            background-color: $secondary;
+            border: none;
+            font-size: 16px;
+            color: $primary;
+          }
+        }
+        > .GUI-num {
+          margin-top: 16px;
+          > .text {
+            width: 160px;
+            height: 28px;
+            color: $secondary;
+            font-size: 20px;
+            font-weight: bold;
+            @include flex(row, flex-start, center);
+          }
+          > input {
+            margin-top: 8px;
+            padding-left: 20px;
+            width: 380px;
+            height: 56px;
+            background-color: $secondary;
+            border: none;
+            font-size: 16px;
+            color: $primary;
           }
         }
       }
