@@ -49,6 +49,7 @@
             width: 24px;
             height: 24px;
             margin-right: -2px;
+            margin-left: -2px;
             color: $secondary;
           }
           > span {
@@ -315,9 +316,13 @@
         }
       }
       > .receipt {
+        width: 100%;
         > .receipt-type {
           margin-top: 30px;
           @include flex();
+          @include media($mobile) {
+            @include flex(row, center, center);
+          }
           > div {
             width: 190px;
             height: 56px;
@@ -327,6 +332,15 @@
             font-weight: bold;
             @include flex(row, center, center);
             border: 1px solid $secondary;
+            cursor: pointer;
+            @include media($desktop) {
+              &:hover {
+                border: 2px solid $secondary;
+              }
+            }
+            @include media($mobile) {
+              width: 50%;
+            }
           }
           .active {
             background-color: $secondary;
@@ -352,6 +366,9 @@
             border: none;
             font-size: 16px;
             color: $primary;
+            @include media($mobile) {
+              width: 100%;
+            }
           }
         }
         > .GUI-num {
@@ -373,6 +390,9 @@
             border: none;
             font-size: 16px;
             color: $primary;
+            @include media($mobile) {
+              width: 100%;
+            }
           }
         }
       }
