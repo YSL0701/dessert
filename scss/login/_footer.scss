@@ -46,6 +46,8 @@ footer {
         }
         @include media($mobile) {
           margin-bottom: 30px;
+          width: calc(100% - 60px);
+          max-width: 360px;
         }
         > div {
           width: 64px;
@@ -63,7 +65,7 @@ footer {
           color: $primary;
           font-weight: bold;
           @include media($mobile) {
-            width: 187px;
+            width: calc(100% - 128px);
           }
         }
         > a {

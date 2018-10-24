@@ -1077,6 +1077,8 @@ footer > .subscribe > .subscribe-container > .input-item {
 @media (max-width: 767px) {
   footer > .subscribe > .subscribe-container > .input-item {
     margin-bottom: 30px;
+    width: calc(100% - 60px);
+    max-width: 360px;
   }
 }
 
@@ -1112,7 +1114,7 @@ footer > .subscribe > .subscribe-container > .input-item > input {
 
 @media (max-width: 767px) {
   footer > .subscribe > .subscribe-container > .input-item > input {
-    width: 187px;
+    width: calc(100% - 128px);
   }
 }
 

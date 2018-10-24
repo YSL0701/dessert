@@ -17,8 +17,10 @@
   .input-item {
     margin-right: 0;
     margin-bottom: 30px;
+    width: calc(100% - 60px);
+    max-width: 360px;
     input {
-      width: 187px;
+      width: calc(100% - 128px);
     }
   }
 }
