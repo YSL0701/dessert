@@ -371,6 +371,87 @@
             }
           }
         }
+        > .address {
+          margin-top: 30px;
+          > .title {
+            height: 100%;
+            @include flex(row, space-between, center);
+            > .text {
+              width: 40px;
+              height: 28px;
+              font-size: 20px;
+              font-weight: bold;
+              color: $secondary;
+              @include flex(row, flex-start, center);
+            }
+            > label {
+              width: 104px;
+              height: 22px;
+              color: $secondary;
+              position: relative;
+              cursor: pointer;
+              font-size: 16px;
+              @include flex(row, space-between, center);
+              > input {
+                opacity: 0;
+                position: absolute;
+                right: -15px;
+                &:checked ~ .ischeck {
+                  @include flex(row, center, center);
+                }
+                &:checked ~ .uncheck {
+                  display: none;
+                }
+              }
+              > .ischeck,
+              .uncheck {
+                width: 22px;
+                height: 22px;
+              }
+              > .ischeck {
+                display: none;
+              }
+              > .uncheck {
+                @include flex(row, center, center);
+              }
+              > .text {
+                width: 80px;
+                height: 22px;
+                font-size: 16px;
+                @include flex(row, flex-start, center);
+              }
+            }
+          }
+          .input-area {
+            margin-top: 8px;
+            @include flex(row, space-between);
+            flex-wrap: wrap;
+            > input {
+              height: 56px;
+              background-color: $secondary;
+              border: none;
+              padding-left: 20px;
+              font-size: 16px;
+              color: #8da291;
+            }
+            > .city {
+              width: 186px;
+            }
+            > .district {
+              width: 186px;
+            }
+            @include media($mobile) {
+              > .city,
+              .district {
+                width: calc(50% - 4.5px);
+              }
+            }
+            > .detail {
+              width: 100%;
+              margin-top: 8px;
+            }
+          }
+        }
         > .GUI-num {
           margin-top: 16px;
           > .text {

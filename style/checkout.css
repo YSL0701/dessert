@@ -1300,6 +1300,189 @@ header > .header-container > ul > .cart {
   }
 }
 
+.main > .checkout-info > .info > .receipt > .address {
+  margin-top: 30px;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > .text {
+  width: 40px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label {
+  width: 104px;
+  height: 22px;
+  color: #eaf0ed;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > input {
+  opacity: 0;
+  position: absolute;
+  right: -15px;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > input:checked ~ .ischeck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > input:checked ~ .uncheck {
+  display: none;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > .ischeck,
+.main > .checkout-info > .info > .receipt > .address > .title > label .uncheck {
+  width: 22px;
+  height: 22px;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > .ischeck {
+  display: none;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > .uncheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address > .title > label > .text {
+  width: 80px;
+  height: 22px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .checkout-info > .info > .receipt > .address .input-area {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main > .checkout-info > .info > .receipt > .address .input-area > input {
+  height: 56px;
+  background-color: #eaf0ed;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #8da291;
+}
+
+.main > .checkout-info > .info > .receipt > .address .input-area > .city {
+  width: 186px;
+}
+
+.main > .checkout-info > .info > .receipt > .address .input-area > .district {
+  width: 186px;
+}
+
+@media (max-width: 767px) {
+  .main > .checkout-info > .info > .receipt > .address .input-area > .city,
+  .main > .checkout-info > .info > .receipt > .address .input-area .district {
+    width: calc(50% - 4.5px);
+  }
+}
+
+.main > .checkout-info > .info > .receipt > .address .input-area > .detail {
+  width: 100%;
+  margin-top: 8px;
+}
+
 .main > .checkout-info > .info > .receipt > .GUI-num {
   margin-top: 16px;
 }

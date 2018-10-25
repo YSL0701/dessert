@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweetaste*-結帳</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="ham-menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+          <img src="./image/logo-all-dark.svg" alt="" class="desktop-logo">
+          <img src="./image/logotype-sm-dark.svg" alt="" class="mobile-logo">
+          <ul>
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./product.html">甜點</a></li>
+            <li><a href="./login.html">登入</a></li>
+            <li class="cart"><a href="./cart.html"><i class="material-icons">shopping_cart</i></a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main">
+        <div class="checkout-info">
+          <div class="info">
+            <div class="title">
+              <div class="text">發票</div>
+              <div class="step">
+                <div class="checked">
+                  <i class="material-icons">check_circle</i>
+                </div>
+                <span class="passed"></span>
+                <div class="checked">
+                  <i class="material-icons">check_circle</i>
+                </div>
+                <span class="passed"></span>
+                <div class="unchecked currently">
+                  <div class="inner"></div>
+                </div>
+              </div>
+            </div>
+            <div class="receipt">
+              <div class="receipt-type">
+                <div class="electronic">電子發票</div>
+                <div class="mail active">郵寄發票</div>
+              </div>
+              <div class="address">
+                <div class="title">
+                  <div class="text">地址</div>
+                  <label for="same">
+                    <input type="checkbox" id="same" class="checkbox">
+                    <div class="ischeck"><i class="material-icons">check_box</i></div>
+                    <div class="uncheck"><i class="material-icons">check_box_outline_blank</i></div>
+                    <div class="text">同運送地址</div>
+                  </label>
+                </div>
+                <div class="input-area">
+                  <input type="text" class="city" placeholder="高雄市">
+                  <input type="text" class="district" placeholder="新興區">
+                  <input type="text" class="detail" placeholder="幸福路 520 號">
+                </div>
+              </div>
+              <div class="GUI-num">
+                <div class="text">統一編號 (選填)</div>
+                <input type="text" placeholder="12345678">
+              </div>
+            </div>
+          </div>
+          <div class="next">下一步</div>
+        </div>
+        <div class="order">
+          <div class="summary">
+            <div class="title">訂單摘要</div>
+            <div class="content">
+              <div class="subtotal">
+                <div>小計</div>
+                <div>NT$ 2,700</div>
+              </div>
+              <div class="freight">
+                <div>運費</div>
+                <div>NT$ 300</div>
+              </div>
+              <div class="total-price">
+                <div>總計</div>
+                <div>NT$ 3,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="title">購物清單</div>
+            <div class="product-info">
+              <div class="product-image image-1"></div>
+              <div class="info">
+                <div class="name">焦糖馬卡龍 (2)</div>
+                <div class="subtotal">NT$ 900</div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-image image-2"></div>
+              <div class="info">
+                <div class="name">焦糖馬卡龍 (2)</div>
+                <div class="subtotal">NT$ 900</div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-image image-3"></div>
+              <div class="info">
+                <div class="name">焦糖馬卡龍 (2)</div>
+                <div class="subtotal">NT$ 900</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <!-- 訂閱區 -->
+        <div class="subscribe">
+          <div class="subscribe-container">
+            <div class="subscribe-text">
+              <img src="./image/logo-light.svg" alt="" class="logo">
+              <div class="text">訂閱你我的甜蜜郵件</div>
+            </div>
+            <div class="input-item">
+              <div class="icon-mail"><i class="material-icons">mail</i></div>
+              <input type="text">
+              <a href="javascript:">
+                <div class="submit"><i class="material-icons">arrow_forward</i></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 連絡資訊區 -->
+        <div class="sweet-info">
+          <div class="info-container">
+            <div class="sweetaste-image">
+              <img src="./image/logotype-lg-dark.svg" alt="" class="sweetaste">
+              <img src="./image/sm-今天是個吃甜點的好日子.svg" alt="" class="good-day">
+            </div>
+            <div class="info">
+              <div class="tel">07-1234-5678</div>
+              <div class="email">sweetaste@email.com</div>
+              <div class="address">800 高雄市新興區幸福路 520 號</div>
+            </div>
+            <div class="footer-bottom">
+              <div class="icon">
+                <a href="javascript:" class="icon-line">
+                  <img src="./image/ic-line@.svg" alt="">
+                </a>
+                <a href="javascript:" class="icon-facebook">
+                  <img src="./image/ic-facebook.svg" alt="">
+                </a>
+              </div>
+              <div class="copyright">© 2018 Sweetaste* All Rights Reserved</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
